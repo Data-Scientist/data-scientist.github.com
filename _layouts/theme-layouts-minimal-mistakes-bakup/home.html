@@ -1,0 +1,54 @@
+---
+theme :
+  name : minimal-mistakes
+---
+{% include JB/setup %}
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include themes/minimal-mistakes/_head.html %}
+</head>
+
+<body class="home">
+
+{% include themes/minimal-mistakes/_browser-upgrade.html %}
+
+{% include themes/minimal-mistakes/_navigation.html %}
+
+{% if page.image.feature %}<div class="image-wrap">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+  {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
+</div><!-- /.image-wrap -->{% endif %}
+
+<div class="article-author-side">
+  {% include themes/minimal-mistakes/_author-bio.html %}
+</div>
+
+<div id="index">
+  <h3><a href="{{ site.url}}/articles/">Articles</a></h3>
+  {% for post in site.posts limit:5 %}    
+  <article>
+    <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+  </article>
+  {% endfor %}
+  
+  <div class="content">
+        {{ content }}
+      </div>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include themes/minimal-mistakes/_footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include themes/minimal-mistakes/_scripts.html %}
+  
+</body>
+</html>
