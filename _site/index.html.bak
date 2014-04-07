@@ -16,7 +16,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/">
+<meta name="twitter:image" content="http://data-scientist.github.io/images/">
 <meta name="twitter:title" content="Home">
 <meta name="twitter:description" content="Describe your website.">
 <meta name="twitter:creator" content="@N/A">
@@ -30,15 +30,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Home">
 <meta property="og:description" content="Describe your website.">
-<meta property="og:url" content="/index.html.bak">
+<meta property="og:url" content="http://data-scientist.github.io/index.html.bak">
 <meta property="og:site_name" content="Library of Data Scientist">
 
 
 
 
 
-<link rel="canonical" href="/.bak">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Library of Data Scientist Feed">
+<link rel="canonical" href="http://data-scientist.github.io/.bak">
+<link href="http://data-scientist.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Library of Data Scientist Feed">
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -52,7 +52,7 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
 	<!-- For all browsers, rich but ugly-->
-<link rel="stylesheet" href="/assets/themes/minimal-mistakes/css/main.min.css">
+<link rel="stylesheet" href="http://data-scientist.github.io/assets/themes/minimal-mistakes/css/main.min.css">
 
 
 <meta http-equiv="cleartype" content="on">
@@ -84,26 +84,26 @@
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
-	<script src="/assets/themes/minimal-mistakes/js/vendor/html5shiv.min.js"></script>
-	<script src="/assets/themes/minimal-mistakes/js/vendor/respond.min.js"></script>
+	<script src="http://data-scientist.github.io/assets/themes/minimal-mistakes/js/vendor/html5shiv.min.js"></script>
+	<script src="http://data-scientist.github.io/assets/themes/minimal-mistakes/js/vendor/respond.min.js"></script>
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="/assets/themes/minimal-mistakes/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="http://data-scientist.github.io/assets/themes/minimal-mistakes/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="shortcut icon" href="http://data-scientist.github.io/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
+<link rel="shortcut icon" href="http://data-scientist.github.io/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://data-scientist.github.io/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://data-scientist.github.io/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://data-scientist.github.io/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://data-scientist.github.io/images/apple-touch-icon-144x144-precomposed.png">
 
 </head>
 
@@ -111,21 +111,21 @@
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="">Library of Data Scientist</a>
+		<a href="http://data-scientist.github.io">Library of Data Scientist</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
 		    <ul>
 		        
-				<li><a href="/about/" >About</a></li>
+				<li><a href="http://data-scientist.github.io/about/" >About</a></li>
 		        
-				<li><a href="/posts/" >Posts</a></li>
+				<li><a href="http://data-scientist.github.io/posts/" >Posts</a></li>
 		        
-				<li><a href="/projects/" >Projects</a></li>
+				<li><a href="http://data-scientist.github.io/projects/" >Projects</a></li>
 		        
-				<li><a href="/books/" >Books</a></li>
+				<li><a href="http://data-scientist.github.io/books/" >Books</a></li>
 		        
-				<li><a href="/courses/" >Courses</a></li>
+				<li><a href="http://data-scientist.github.io/courses/" >Courses</a></li>
 		        
 				<li><a href="/help/" target="_blank">Help</a></li>
 		        
@@ -1172,7 +1172,7 @@ or jump right into <a href="">Usage</a> if you&#8217;d like.</p>
 
 <p>Lorem ipsum dolor sit amet, test link adipiscing elit. <strong>This is strong</strong>. Nullam dignissim convallis est. Quisque aliquam.</p>
 
-<p class="image-pull-right"><img src="/images/3953273590_704e3899d5_m.jpg" alt="Smithsonian Image" /></p>
+<p class="image-pull-right"><img src="http://data-scientist.github.io/images/3953273590_704e3899d5_m.jpg" alt="Smithsonian Image" /></p>
 
 <p><em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
@@ -1288,8 +1288,24 @@ or jump right into <a href="">Usage</a> if you&#8217;d like.</p>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/themes/minimal-mistakes/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/assets/themes/minimal-mistakes/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://data-scientist.github.io/assets/themes/minimal-mistakes/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://data-scientist.github.io/assets/themes/minimal-mistakes/js/scripts.min.js"></script>
+
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-123-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 
 
