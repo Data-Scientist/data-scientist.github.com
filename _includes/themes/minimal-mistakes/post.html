@@ -9,7 +9,7 @@
     </div><!--/ .headline-wrap -->
 
     <div class="article-wrap">
-      
+
 		<div class="row-fluid post-full">
 		  <div class="span12">
 			<div class="date">
@@ -25,7 +25,7 @@
 			  {% assign categories_list = page.categories %}
 			  {% include JB/categories_list %}
 			</ul>
-		  {% endunless %}  
+		  {% endunless %}
 
 		  {% unless page.tags == empty %}
 			<ul class="tag_box inline">
@@ -33,9 +33,9 @@
 			  {% assign tags_list = page.tags %}
 			  {% include JB/tags_list %}
 			</ul>
-		  {% endunless %}  
+		  {% endunless %}
 
-			<hr>		
+			<hr>
 		  </div>
 		</div>
 
@@ -43,9 +43,9 @@
         <div class="article-author-bottom">
           {% include themes/minimal-mistakes/_component/_author-bio.html %}
         </div>
-        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ BASE_PATH }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
       </footer>
-	  
+
 	  <div class="row-fluid post-full">
 		  <div class="span12">
 	  <div class="pagination">
@@ -65,7 +65,7 @@
 			</div>
 			</div>
 			</div>
-			
+
 			 <hr />
     </div><!-- /.article-wrap -->
 </article>
@@ -73,14 +73,14 @@
 
 <div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ BASE_PATH }}/posts/">View all posts</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li><a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
     <hr />
-	{% include JB/comments %} 
+	{% include JB/comments %}
   </div><!-- /.related-articles -->
 </div><!-- /.footer-wrap -->
 

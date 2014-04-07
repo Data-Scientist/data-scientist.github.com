@@ -76,7 +76,7 @@ minimal-mistakes/
 
 ### _config.yml
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the `title`, `description`, and `url` of your site. When working locally use `http://localhost:4000` or comment out `url` to avoid broken links prefixed with `{{ "{{ site.url " }}}}`[^1] in the various `_includes` and `_layouts`. Just remember to set `url` back to the live domain before deploying or pushing to GitHub Pages.
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the `title`, `description`, and `url` of your site. When working locally use `http://localhost:4000` or comment out `url` to avoid broken links prefixed with `{{ "{{ BASE_PATH " }}}}`[^1] in the various `_includes` and `_layouts`. Just remember to set `url` back to the live domain before deploying or pushing to GitHub Pages.
 
 #### Owner/Author Information
 
@@ -127,7 +127,7 @@ There are a few configuration variables that can be changed in `Rakefile.rb`. By
 
 A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at the [Jekyll Picture Tag](https://github.com/scottjehl/picturefill) plugin[^2].
 
-The two layouts make the assumption that the feature images live in the `images/` folder. To add a feature image to a post or page just include the filename in the front matter like so. 
+The two layouts make the assumption that the feature images live in the `images/` folder. To add a feature image to a post or page just include the filename in the front matter like so.
 
 {% highlight yaml %}
 image:
@@ -146,7 +146,7 @@ image:
 
 #### Post Index Page
 
-A [sample index page]({{ site.url }}/posts/) listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change **Posts** to **Writing** update the following:
+A [sample index page]({{ BASE_PATH }}/posts/) listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change **Posts** to **Writing** update the following:
 
 * In `_config.yml` under `links:` rename the title and URL to the following:
 {% highlight yaml %}
@@ -214,7 +214,7 @@ Having a problem getting something to work or want to know why I setup something
 
 ## License
 
-This theme is free and open source software, distributed under the [GNU General Public License]({{ site.url }}/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+This theme is free and open source software, distributed under the [GNU General Public License]({{ BASE_PATH }}/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.
 
 
 [^1]: Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for canonical urls in `_head.html`. Don't include a trailing `/` in your base url ie: `http://mademistakes.com`. When developing locally remove or comment out this line so local .css, .js, and images are used.
