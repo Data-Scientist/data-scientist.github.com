@@ -14,7 +14,8 @@ title : Library of Data Scientist
 description:      Describe your website.
 tagline: Site Tagline Describe your website
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-#url:             # http://localhost:4000
+#url:              http://localhost:4000
+url : http://data-scientist.github.io
 #author :
 owner:
   name : Lords
