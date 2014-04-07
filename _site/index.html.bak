@@ -1,0 +1,1298 @@
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Home &#8211; Library of Data Scientist</title>
+<meta name="description" content="">
+<meta name="author" content="Lords">
+<meta name="keywords" content="">
+
+<!-- Highlight code -->
+<link rel="stylesheet" href="/pygments.css">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+<meta name="twitter:title" content="Home">
+<meta name="twitter:description" content="Describe your website.">
+<meta name="twitter:creator" content="@N/A">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Home">
+<meta property="og:description" content="Describe your website.">
+<meta property="og:url" content="http://localhost:4000/index.html.bak">
+<meta property="og:site_name" content="Library of Data Scientist">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/.bak">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Library of Data Scientist Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Google Webfonts -->
+
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+	<!-- For all browsers, rich but ugly-->
+<link rel="stylesheet" href="http://localhost:4000/assets/themes/minimal-mistakes/css/main.min.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+	<link href="/assets/themes/minimal-mistakes/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/minimal-mistakes/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<link href="/assets/themes/minimal-mistakes/bootstrap/css/font-awesome.min.css" rel="stylesheet" >
+
+	
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/themes/minimal-mistakes/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/themes/minimal-mistakes/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/themes/minimal-mistakes/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body>
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Library of Data Scientist</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				<li><a href="http://localhost:4000/about/" >About</a></li>
+		        
+				<li><a href="http://localhost:4000/posts/" >Posts</a></li>
+		        
+				<li><a href="http://localhost:4000/projects/" >Projects</a></li>
+		        
+				<li><a href="http://localhost:4000/books/" >Books</a></li>
+		        
+				<li><a href="http://localhost:4000/courses/" >Courses</a></li>
+		        
+				<li><a href="/help/" target="_blank">Help</a></li>
+		        
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+<!-- 
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Library of Data Scientist</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+-->
+
+
+
+   <!-- <div class="container-narrow"> -->
+   <div>
+
+      <div class="content">
+            <div id="posts">
+
+    	
+          <h2><a href="/test%E5%88%86%E7%B1%BB/latex%E6%B5%8B%E8%AF%95/">Latex测试</a></h2>
+          04 Mar 2014
+           
+<p>先给出一个行内Latex公式到例子，<script type="math/tex">ChooseMove：B \to M</script>，然后看一个段间到例子：
+建议在rmd中inline latex用一个$号预览，md中改为2个$号渲染</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+V(b) = 
+\begin{cases}
+100, & \text{若 $b$ 是最终的胜局} \\
+-100, & \text{若 $b$ 是最终的负局} \\
+0, & \text{若 $b$ 是最终的和局} \\
+V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+ %]]></script>
+
+<p>看看会如何？</p>
+
+
+        
+          <h2><a href="/r/RmdTest/">RmdTest</a></h2>
+          03 Mar 2014
+           
+<h1 id="title">Title</h1>
+
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the <strong>Help</strong> toolbar button for more details on using R Markdown).</p>
+
+<p>When you click the <strong>Knit HTML</strong> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<div class="highlight"><pre><code class="s">summary<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">##      speed           dist    
+##  Min.   : 4.0   Min.   :  2  
+##  1st Qu.:12.0   1st Qu.: 26  
+##  Median :15.0   Median : 36  
+##  Mean   :15.4   Mean   : 43  
+##  3rd Qu.:19.0   3rd Qu.: 56  
+##  Max.   :25.0   Max.   :120
+</code></pre></div>
+
+<p>You can also embed plots, for example:</p>
+
+<div class="highlight"><pre><code class="s">plot<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2014-03-03-RmdTest/fig1.png" alt="center" /> </p>
+
+<h5 id="figure-1-">Figure 1: 汽车</h5>
+
+<p>混编Latex：</p>
+
+<p>先给出一个行内Latex公式到例子，<script type="math/tex">ChooseMove：B \to M</script>，然后看一个段间到例子：</p>
+
+<div class="highlight"><pre><code class="s">\tao <span class="o">=</span> \miu
+</code></pre></div>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+V(b) = 
+\begin{cases}
+100, & \text{若 $b$ 是最终的胜局} \\
+-100, & \text{若 $b$ 是最终的负局} \\
+0, & \text{若 $b$ 是最终的和局} \\
+V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+ %]]></script>
+
+<p>Does <strong>knitr</strong> work with Python? Use the chunk option <code>engine='python'</code>:</p>
+
+<div class="highlight"><pre><code class="python"><span class="n">x</span> <span class="o">=</span> <span class="s">&#39;hello, python world!&#39;</span>
+<span class="k">print</span> <span class="n">x</span>
+<span class="k">print</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">## hello, python world!
+## [&#39;hello,&#39;, &#39;python&#39;, &#39;world!&#39;]
+</code></pre></div>
+
+
+
+        
+          <h2><a href="/code-highlighting-post/">Syntax Highlighting Post</a></h2>
+          16 Aug 2013
+           <p><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">Syntax highlighting</a> is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.</p>
+
+<h3 id="pygments-code-blocks">Pygments Code Blocks</h3>
+
+<p>To modify styling and highlight colors edit <code>/assets/less/pygments.less</code> and compile <code>main.less</code> with your favorite preprocessor. Or edit <code>main.css</code> if that’s your thing, the classes you want to modify all begin with <code>.highlight</code>.</p>
+
+<div class="highlight"><pre><code class="css"><span class="nf">#container</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Line numbering enabled:</p>
+
+<div class="highlight"><pre><code class="html"><span class="lineno">1</span> <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;pagination&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">2</span>     {% if page.previous %}
+<span class="lineno">3</span>         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ site.url }}{{ page.previous.url }}&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">title=</span><span class="s">&quot;{{ page.previous.title }}&quot;</span><span class="nt">&gt;</span>Previous article<span class="nt">&lt;/a&gt;</span>
+<span class="lineno">4</span>     {% endif %}
+<span class="lineno">5</span>     {% if page.next %}
+<span class="lineno">6</span>         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{{ site.url }}{{ page.next.url }}&quot;</span> <span class="na">class=</span><span class="s">&quot;btn&quot;</span> <span class="na">title=</span><span class="s">&quot;{{ page.next.title }}&quot;</span><span class="nt">&gt;</span>Next article<span class="nt">&lt;/a&gt;</span>
+<span class="lineno">7</span>     {% endif %}
+<span class="lineno">8</span> <span class="nt">&lt;/nav&gt;</span><span class="c">&lt;!-- /.pagination --&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">module</span> <span class="nn">Jekyll</span>
+  <span class="k">class</span> <span class="nc">TagIndex</span> <span class="o">&lt;</span> <span class="no">Page</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">dir</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
+      <span class="vi">@site</span> <span class="o">=</span> <span class="n">site</span>
+      <span class="vi">@base</span> <span class="o">=</span> <span class="n">base</span>
+      <span class="vi">@dir</span> <span class="o">=</span> <span class="n">dir</span>
+      <span class="vi">@name</span> <span class="o">=</span> <span class="s1">&#39;index.html&#39;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="vi">@name</span><span class="p">)</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">read_yaml</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="s1">&#39;_layouts&#39;</span><span class="p">),</span> <span class="s1">&#39;tag_index.html&#39;</span><span class="p">)</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;tag&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="n">tag</span>
+      <span class="n">tag_title_prefix</span> <span class="o">=</span> <span class="n">site</span><span class="o">.</span><span class="n">config</span><span class="o">[</span><span class="s1">&#39;tag_title_prefix&#39;</span><span class="o">]</span> <span class="o">||</span> <span class="s1">&#39;Tagged: &#39;</span>
+      <span class="n">tag_title_suffix</span> <span class="o">=</span> <span class="n">site</span><span class="o">.</span><span class="n">config</span><span class="o">[</span><span class="s1">&#39;tag_title_suffix&#39;</span><span class="o">]</span> <span class="o">||</span> <span class="s1">&#39;&amp;#8211;&#39;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">tag_title_prefix</span><span class="si">}#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">&quot;</span>
+      <span class="nb">self</span><span class="o">.</span><span class="n">data</span><span class="o">[</span><span class="s1">&#39;description&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;An archive of posts tagged </span><span class="si">#{</span><span class="n">tag</span><span class="si">}</span><span class="s2">.&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<h3 id="standard-code-block">Standard Code Block</h3>
+
+<pre><code>&lt;nav class="pagination" role="navigation"&gt;
+    {% if page.previous %}
+        &lt;a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}"&gt;Previous article&lt;/a&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}"&gt;Next article&lt;/a&gt;
+    {% endif %}
+&lt;/nav&gt;&lt;!-- /.pagination --&gt;
+</code></pre>
+
+<h3 id="fenced-code-blocks">Fenced Code Blocks</h3>
+
+<p>To modify styling and highlight colors edit <code>/assets/less/coderay.less</code> and compile <code>main.less</code> with your favorite preprocessor. Or edit <code>main.css</code> if that’s your thing, the classes you want to modify all begin with <code>.coderay</code>. Line numbers and a few other things can be modified in <code>_config.yml</code> under <code>coderay</code>.</p>
+
+<pre><code class="language-css">#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+</code></pre>
+
+<pre><code class="language-html">&lt;nav class="pagination" role="navigation"&gt;
+    {% if page.previous %}
+        &lt;a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}"&gt;Previous article&lt;/a&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}"&gt;Next article&lt;/a&gt;
+    {% endif %}
+&lt;/nav&gt;&lt;!-- /.pagination --&gt;
+</code></pre>
+
+<pre><code class="language-ruby">module Jekyll
+  class TagIndex &lt; Page
+    def initialize(site, base, dir, tag)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = 'index.html'
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
+      self.data['tag'] = tag
+      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
+      tag_title_suffix = site.config['tag_title_suffix'] || '&amp;#8211;'
+      self.data['title'] = "#{tag_title_prefix}#{tag}"
+      self.data['description'] = "An archive of posts tagged #{tag}."
+    end
+  end
+end
+</code></pre>
+
+
+        
+          <h2><a href="/readability-feature-post/">Post with Large Feature Image and Text</a></h2>
+          23 May 2013
+           <p>This is a sample post with a large feature image<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> up top and tons of text. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.</p>
+
+<p>Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.</p>
+
+<h2 id="cupidatat-90s-lo-fi-authentic-try-hard">Cupidatat 90’s lo-fi authentic try-hard</h2>
+
+<p>In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s. </p>
+
+<ul>
+  <li>Sartorial hoodie </li>
+  <li>Labore viral forage</li>
+  <li>Tote bag selvage </li>
+  <li>DIY exercitation et id ugh tumblr church-key</li>
+</ul>
+
+<p>Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.</p>
+
+<p>Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.</p>
+
+<h2 id="forage-occaecat-cardigan-qui">Forage occaecat cardigan qui</h2>
+
+<p>Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole. </p>
+
+<blockquote>
+  <p>Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.</p>
+</blockquote>
+
+<p>Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.</p>
+
+<h2 id="hoodie-duis">Hoodie Duis</h2>
+
+<p>Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.</p>
+
+<h3 id="thundercats-ho">Thundercats Ho!</h3>
+
+<p>Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.</p>
+
+<p>Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.</p>
+
+<p>Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Texture image courtesty of <a href="http://www.lovetextures.com/">Lovetextures</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+        
+          <h2><a href="/sample-post-images/">A Post with Images</a></h2>
+          22 May 2013
+           <p>Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use <code>figure</code> with the appropriate <code>class</code>. Each instance of <code>figure</code> is auto-numbered and displayed in the caption.</p>
+
+<h3 id="figures-for-images-or-video">Figures (for images or video)</h3>
+
+<h4 id="one-up">One Up</h4>
+
+<figure>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" /></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+</figure>
+
+<h4 id="two-up">Two Up</h4>
+
+<p>Apply the <code>half</code> class like so to display two images side by side that share the same caption.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;half&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/images/image-filename-1-large.jpg&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/image-filename-1.jpg&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/images/image-filename-2-large.jpg&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/image-filename-2.jpg&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>Caption describing these two images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+
+<p>And you’ll get something that looks like this:</p>
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" /></a>
+	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" /></a>
+	<figcaption>Two images.</figcaption>
+</figure>
+
+<h4 id="three-up">Three Up</h4>
+
+<p>Apply the <code>third</code> class like so to display three images side by side that share the same caption.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">&quot;third&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/image-filename-1.jpg&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/image-filename-2.jpg&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/image-filename-3.jpg&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these three images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div>
+
+<p>And you’ll get something that looks like this:</p>
+
+<figure class="third">
+	<img src="http://placehold.it/600x300.jpg" />
+	<img src="http://placehold.it/600x300.jpg" />
+	<img src="http://placehold.it/600x300.jpg" />
+	<figcaption>Three images.</figcaption>
+</figure>
+
+
+        
+          <h2><a href="/r/knitr-jekyll/">Blog with Knitr and Jekyll</a></h2>
+          03 Jul 2012
+           
+<p>The <a href="http://yihui.name/knitr/">knitr</a> package provides an easy way to embed 
+<a href="http://www.r-project.org/">R</a> code in a <a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a> 
+blog post. The only required input is an <strong>R Markdown</strong> source file. 
+The name of the source file used to generate this post is <em>2012-07-03-knitr-jekyll.Rmd</em>, available
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/Rmd/2012-07-03-knitr-jekyll.Rmd">here</a>.
+Steps taken to build this post are as follows:</p>
+
+<p>new row test&#8230;&#8230;&#8230;&#8230;&#8230;</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Create a Jekyll-Boostrap blog if you don&#8217;t already have one. 
+A brief tutorial on building this blog is available 
+<a href="/lessons/2012/05/30/jekyll-build-on-windows/">here</a>.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Open the R Console and process the source file:</p>
+
+<div class="highlight"><pre><code class="s">KnitPost <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>input<span class="p">,</span> base.url <span class="o">=</span> <span class="s">&quot;/&quot;</span><span class="p">)</span> <span class="p">{</span>
+    require<span class="p">(</span>knitr<span class="p">)</span>
+    opts_knit<span class="o">$</span>set<span class="p">(</span>base.url <span class="o">=</span> base.url<span class="p">)</span>
+    fig.path <span class="o">&lt;-</span> paste0<span class="p">(</span><span class="s">&quot;figs/&quot;</span><span class="p">,</span> sub<span class="p">(</span><span class="s">&quot;.Rmd$&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> basename<span class="p">(</span>input<span class="p">)),</span> <span class="s">&quot;/&quot;</span><span class="p">)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.path <span class="o">=</span> fig.path<span class="p">)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.cap <span class="o">=</span> <span class="s">&quot;center&quot;</span><span class="p">)</span>
+    render_jekyll<span class="p">()</span>
+    knit<span class="p">(</span>input<span class="p">,</span> envir <span class="o">=</span> parent.frame<span class="p">())</span>
+<span class="p">}</span>
+KnitPost<span class="p">(</span><span class="s">&quot;2012-07-03-knitr-jekyll.Rmd&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Move the resulting image folder <em>2012-07-03-knitr-jekyll</em> and <strong>Markdown</strong> file 
+<em>2012-07-03-knitr-jekyll.md</em> to the local 
+<em>jfisher-usgs.github.com</em> <a href="http://git-scm.com/">git</a> repository.
+The KnitPost function assumes that the image folder will be placed in a 
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/tree/master/figs">figs</a> 
+folder located at the root of the repository.</p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Add the following CSS code to the 
+<em>/assets/themes/twitter-2.0/css/bootstrap.min.css</em> file to center images:</p>
+
+<pre><code>[alt=center] {
+  display: block;
+  margin: auto;
+}
+</code></pre>
+
+<p>That&#8217;s it.</p>
+
+<hr />
+
+<p>Here are a few examples of embedding R code:</p>
+
+<div class="highlight"><pre><code class="s">summary<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">##      speed           dist    
+##  Min.   : 4.0   Min.   :  2  
+##  1st Qu.:12.0   1st Qu.: 26  
+##  Median :15.0   Median : 36  
+##  Mean   :15.4   Mean   : 43  
+##  3rd Qu.:19.0   3rd Qu.: 56  
+##  Max.   :25.0   Max.   :120
+</code></pre></div>
+
+<div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">0.1</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+plot<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig1.png" alt="center" /> </p>
+
+<h5 id="figure-1-caption">Figure 1: Caption</h5>
+
+<div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">2.5</span><span class="p">,</span> <span class="m">2.5</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+filled.contour<span class="p">(</span>volcano<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig2.png" alt="center" /> </p>
+
+<h5 id="figure-2-caption">Figure 2: Caption</h5>
+
+<p>And don&#8217;t forget your session information for proper reproducible research.</p>
+
+<div class="highlight"><pre><code class="s">sessionInfo<span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">## R version 3.0.1 (2013-05-16)
+## Platform: x86_64-redhat-linux-gnu (64-bit)
+## 
+## locale:
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=C                 LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] knitr_1.5
+## 
+## loaded via a namespace (and not attached):
+## [1] evaluate_0.5.1 formatR_0.10   stringr_0.6.2  tools_3.0.1
+</code></pre></div>
+
+
+
+        
+          <h2><a href="/readability-post/">Testing Readability with a Bunch of Text</a></h2>
+          22 May 2012
+           <p>Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.</p>
+
+<p>Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.</p>
+
+<h2 id="cupidatat-90s-lo-fi-authentic-try-hard">Cupidatat 90’s lo-fi authentic try-hard</h2>
+
+<p>In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s. </p>
+
+<ul>
+  <li>Sartorial hoodie </li>
+  <li>Labore viral forage</li>
+  <li>Tote bag selvage </li>
+  <li>DIY exercitation et id ugh tumblr church-key</li>
+</ul>
+
+<p>Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.</p>
+
+<p>Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.</p>
+
+<h2 id="forage-occaecat-cardigan-qui">Forage occaecat cardigan qui</h2>
+
+<p>Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole. </p>
+
+<blockquote>
+  <p>Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.</p>
+</blockquote>
+
+<p>Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.</p>
+
+<h2 id="hoodie-duis">Hoodie Duis</h2>
+
+<p>Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.</p>
+
+<h3 id="thundercats-ho">Thundercats Ho!</h3>
+
+<p>Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.</p>
+
+<p>Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.</p>
+
+<p>Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.</p>
+
+
+        
+          <h2><a href="/lessons/jekyll-introduction/">Jekyll Introduction</a></h2>
+          29 Dec 2011
+           
+<p>This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
+Directly following the intro we&#8217;ll learn exactly <em>how</em> Jekyll does what it does.</p>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="what-is-jekyll">What is Jekyll?</h3>
+
+<p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
+dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &#8220;a simple, blog aware, static site generator&#8221;.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>This website is created with Jekyll. <a href="https://github.com/mojombo/jekyll/wiki/Sites">Other Jekyll websites</a>.</p>
+
+<h3 id="what-does-jekyll-do">What does Jekyll Do?</h3>
+
+<p>Jekyll is a ruby gem you install on your local system.
+Once there you can call <code>jekyll --server</code> on a directory and provided that directory
+is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,
+compute categories, tags, permalinks, and construct your pages from layout templates and partials.</p>
+
+<p>Once parsed, Jekyll stores the result in a self-contained static <code>_site</code> folder.
+The intention here is that you can serve all contents in this folder statically from a plain static web-server.</p>
+
+<p>You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
+on each request, Jekyll does this once <em>beforehand</em> and caches the <em>entire website</em> in a folder for serving statically.</p>
+
+<h3 id="jekyll-is-not-blogging-software">Jekyll is Not Blogging Software</h3>
+
+<p><strong>Jekyll is a parsing engine.</strong></p>
+
+<p>Jekyll does not come with any content nor does it have any templates or design elements.
+This is a common source of confusion when getting started.
+Jekyll does not come with anything you actually use or see on your website - you have to make it.</p>
+
+<h3 id="why-should-i-care">Why Should I Care?</h3>
+
+<p>Jekyll is very minimalistic and very efficient.
+The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server.
+Traditional dynamic blogs like Wordpress require a database and server-side code.
+Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.</p>
+
+<p>Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.</p>
+
+<p><strong>Developers like Jekyll because we can write content like we write code:</strong></p>
+
+<ul>
+  <li>Ability to write content in markdown or textile in your favorite text-editor.</li>
+  <li>Ability to write and preview your content via localhost.</li>
+  <li>No internet connection required.</li>
+  <li>Ability to publish via git.</li>
+  <li>Ability to host your blog on a static web-server.</li>
+  <li>Ability to host freely on GitHub Pages.</li>
+  <li>No database required.</li>
+</ul>
+
+<h1 id="how-jekyll-works">How Jekyll Works</h1>
+
+<p>The following is a complete but concise outline of exactly how Jekyll works.</p>
+
+<p>Be aware that core concepts are introduced in rapid succession without code examples.
+This information is not intended to specifically teach you how to do anything, rather it
+is intended to give you the <em>full picture</em> relative to what is going on in Jekyll-world.</p>
+
+<p>Learning these core concepts should help you avoid common frustrations and ultimately
+help you better understand the code examples contained throughout Jekyll-Bootstrap.</p>
+
+<h2 id="initial-setup">Initial Setup</h2>
+
+<p>After <a href="/index.html#start-now">installing jekyll</a> you&#8217;ll need to format your website directory in a way jekyll expects.
+Jekyll-bootstrap conveniently provides the base directory format.</p>
+
+<h3 id="the-jekyll-application-base-format">The Jekyll Application Base Format</h3>
+
+<p>Jekyll expects your website directory to be laid out like so:</p>
+
+<pre><code>.
+|-- _config.yml
+|-- _includes
+|-- _layouts
+|   |-- default.html
+|   |-- post.html
+|-- _posts
+|   |-- 2011-10-25-open-source-is-good.markdown
+|   |-- 2011-04-26-hello-world.markdown
+|-- _site
+|-- index.html
+|-- assets
+    |-- css
+        |-- style.css
+    |-- javascripts
+</code></pre>
+
+<ul>
+  <li>
+    <p><strong>_config.yml</strong>
+  Stores configuration data.</p>
+  </li>
+  <li>
+    <p><strong>_includes</strong>
+  This folder is for partial views.</p>
+  </li>
+  <li>
+    <p><strong>_layouts</strong>
+  This folder is for the main templates your content will be inserted into.
+  You can have different layouts for different pages or page sections.</p>
+  </li>
+  <li>
+    <p><strong>_posts</strong>
+  This folder contains your dynamic content/posts.
+  the naming format is required to be <code>@YEAR-MONTH-DATE-title.MARKUP@</code>.</p>
+  </li>
+  <li>
+    <p><strong>_site</strong>
+  This is where the generated site will be placed once Jekyll is done transforming it.</p>
+  </li>
+  <li>
+    <p><strong>assets</strong>
+  This folder is not part of the standard jekyll structure.
+  The assets folder represents <em>any generic</em> folder you happen to create in your root directory.
+  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.</p>
+  </li>
+</ul>
+
+<p>(read more: <a href="https://github.com/mojombo/jekyll/wiki/Usage">https://github.com/mojombo/jekyll/wiki/Usage</a>)</p>
+
+<h3 id="jekyll-configuration">Jekyll Configuration</h3>
+
+<p>Jekyll supports various configuration options that are fully outlined here:
+(<a href="https://github.com/mojombo/jekyll/wiki/Configuration">https://github.com/mojombo/jekyll/wiki/Configuration</a>)</p>
+
+<h2 id="content-in-jekyll">Content in Jekyll</h2>
+
+<p>Content in Jekyll is either a post or a page.
+These content &#8220;objects&#8221; get inserted into one or more templates to build the final output for its respective static-page.</p>
+
+<h3 id="posts-and-pages">Posts and Pages</h3>
+
+<p>Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax.
+Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.</p>
+
+<h3 id="working-with-posts">Working With Posts</h3>
+
+<p><strong>Creating a Post</strong>
+Posts are created by properly formatting a file and placing it the <code>_posts</code> folder.</p>
+
+<p><strong>Formatting</strong>
+A post must have a valid filename in the form <code>YEAR-MONTH-DATE-title.MARKUP</code> and be placed in the <code>_posts</code> directory.
+If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
+Additionally, each file must have <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front-Matter</a> prepended to its content.
+YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.</p>
+
+<p><strong>Order</strong>
+Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy.
+Only reverse chronological and chronological ordering is supported in Jekyll.</p>
+
+<p>Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.</p>
+
+<p><strong>Tags</strong>
+Posts can have tags associated with them as part of their meta-data.
+Tags may be placed on posts by providing them in the post&#8217;s YAML front matter.
+You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.</p>
+
+<p><strong>Categories</strong>
+Posts may be categorized by providing one or more categories in the YAML front matter.
+Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
+Note categories in Jekyll work in a specific way.
+If you define more than one category you are defining a category hierarchy &#8220;set&#8221;.
+Example:</p>
+
+<pre><code>---
+title :  Hello World
+categories : [lessons, beginner]
+---
+</code></pre>
+
+<p>This defines the category hierarchy &#8220;lessons/beginner&#8221;. Note this is <em>one category</em> node in Jekyll.
+You won&#8217;t find &#8220;lessons&#8221; and &#8220;beginner&#8221; as two separate categories unless you define them elsewhere as singular categories.</p>
+
+<h3 id="working-with-pages">Working With Pages</h3>
+
+<p><strong>Creating a Page</strong>
+Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do <em>not</em> start with an underscore.</p>
+
+<p><strong>Formatting</strong>
+In order to register as a Jekyll page the file must contain <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML Front-Matter</a>.
+Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the <code>site.pages</code> array for inclusion into your templates.</p>
+
+<p><strong>Categories and Tags</strong>
+Pages do not compute categories nor tags so defining them will have no effect.</p>
+
+<p><strong>Sub-Directories</strong>
+If pages are defined in sub-directories, the path to the page will be reflected in the url.
+Example:</p>
+
+<pre><code>.
+|-- people
+    |-- bob
+        |-- essay.html
+</code></pre>
+
+<p>This page will be available at <code>http://yourdomain.com/people/bob/essay.html</code></p>
+
+<p><strong>Recommended Pages</strong></p>
+
+<ul>
+  <li><strong>index.html</strong>
+You will always want to define the root index.html page as this will display on your root URL.</li>
+  <li><strong>404.html</strong>
+Create a root 404.html page and GitHub Pages will serve it as your 404 response.</li>
+  <li><strong>sitemap.html</strong>
+Generating a sitemap is good practice for SEO.</li>
+  <li><strong>about.html</strong>
+A nice about page is easy to do and gives the human perspective to your website.</li>
+</ul>
+
+<h2 id="templates-in-jekyll">Templates in Jekyll</h2>
+
+<p>Templates are used to contain a page&#8217;s or post&#8217;s content.
+All templates have access to a global site object variable: <code>site</code> as well as a page object variable: <code>page</code>.
+The site variable holds all accessible content and metadata relative to the site.
+The page variable holds accessible data for the given page or post being rendered at that point.</p>
+
+<p><strong>Create a Template</strong>
+Templates are created by properly formatting a file and placing it in the <code>_layouts</code> directory.</p>
+
+<p><strong>Formatting</strong>
+Templates should be coded in HTML and contain YAML Front Matter.
+All templates can contain Liquid code to work with your site&#8217;s data.</p>
+
+<p><strong>Rending Page/Post Content in a Template</strong>
+There is a special variable in all templates named : <code>content</code>.
+The <code>content</code> variable holds the page/post content including any sub-template content previously defined.
+Render the content variable wherever you want your main content to be injected into your template:</p>
+
+<pre><code>...
+&lt;body&gt;
+  &lt;div id="sidebar"&gt; ... &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &#123;{content}&#125;
+  &lt;/div&gt;
+&lt;/body&gt;
+...</code></pre>
+
+<h3 id="sub-templates">Sub-Templates</h3>
+
+<p>Sub-templates are exactly templates with the only difference being they
+define another &#8220;root&#8221; layout/template within their YAML Front Matter.
+This essentially means a template will render inside of another template.</p>
+
+<h3 id="includes">Includes</h3>
+<p>In Jekyll you can define include files by placing them in the <code>_includes</code> folder.
+Includes are NOT templates, rather they are just code snippets that get included into templates.
+In this way, you can treat the code inside includes as if it was native to the parent template.</p>
+
+<p>Any valid template code may be used in includes.</p>
+
+<h2 id="using-liquid-for-templating">Using Liquid for Templating</h2>
+
+<p>Templating is perhaps the most confusing and frustrating part of Jekyll.
+This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.</p>
+
+<h3 id="what-is-liquid">What is Liquid?</h3>
+
+<p><a href="https://github.com/Shopify/liquid">Liquid</a> is a secure templating language developed by <a href="http://shopify.com">Shopify</a>.
+Liquid is designed for end-users to be able to execute logic within template files
+without imposing any security risk on the hosting server.</p>
+
+<p>Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with
+your site and post/page data.</p>
+
+<h3 id="why-do-we-have-to-use-liquid">Why Do We Have to Use Liquid?</h3>
+
+<p>GitHub uses Jekyll to power <a href="http://pages.github.com/">GitHub Pages</a>.
+GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.</p>
+
+<h3 id="liquid-is-not-programmer-friendly">Liquid is Not Programmer-Friendly.</h3>
+
+<p>The short story is liquid is not real code and its not intended to execute real code.
+The point being you can&#8217;t do jackshit in liquid that hasn&#8217;t been allowed explicitly by the implementation.
+What&#8217;s more you can only access data-structures that have been explicitly passed to the template.</p>
+
+<p>In Jekyll&#8217;s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins.
+Both of which cannot be supported by GitHub Pages.</p>
+
+<p>As a programmer - this is very frustrating.</p>
+
+<p>But rather than look a gift horse in the mouth we are going to
+suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.</p>
+
+<p><strong>Aside</strong>
+My personal stance is to not invest time trying to hack liquid. It&#8217;s really unnecessary
+<em>from a programmer&#8217;s</em> perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)
+you are better off sticking with ruby. Toward that end I&#8217;ve built <a href="http://github.com/plusjade/mustache-with-jekyll">Mustache-with-Jekyll</a></p>
+
+<h2 id="static-assets">Static Assets</h2>
+
+<p>Static assets are any file in the root or non-underscored subfolders that are not pages.
+That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.</p>
+
+<p>Static assets should be used for images, css, and javascript files.</p>
+
+<h2 id="how-jekyll-parses-files">How Jekyll Parses Files</h2>
+
+<p>Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.</p>
+
+<ul>
+  <li><strong>Content parsing.</strong>
+  This is done with textile or markdown.</li>
+  <li><strong>Template parsing.</strong>
+This is done with the liquid templating language.</li>
+</ul>
+
+<p>And thus there are two main types of file formats needed for this parsing.</p>
+
+<ul>
+  <li><strong>Post and Page files.</strong>
+All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.</li>
+  <li><strong>Template files.</strong>
+  These files go in <code>_layouts</code> folder and contain your blogs <strong>templates</strong>. They should be made in HTML with the help of Liquid syntax.
+  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.</li>
+</ul>
+
+<p><strong>Arbitrary files and folders.</strong>
+Files that <em>are not</em> valid pages are treated as static content and pass through
+Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.</p>
+
+<h3 id="formatting-files-for-parsing">Formatting Files for Parsing.</h3>
+
+<p>We&#8217;ve outlined the need for valid formatting using <strong>YAML Front Matter</strong>.
+Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.
+This is the only way Jekyll knows you want the file processed.</p>
+
+<p>YAML Front Matter must be prepended to the top of template/post/page files:</p>
+
+<pre><code>---
+layout: post
+category : pages
+tags : [how-to, jekyll]
+---
+
+... contents ...
+</code></pre>
+
+<p>Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
+The data inside the block must be valid YAML.</p>
+
+<p>Configuration parameters for YAML Front-Matter is outlined here:
+<a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">A comprehensive explanation of YAML Front Matter</a></p>
+
+<h4 id="defining-layouts-for-posts-and-templates-parsing">Defining Layouts for Posts and Templates Parsing.</h4>
+
+<p>The <code>layout</code> parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.
+If a template file specifies its own layout, it is effectively being used as a <code>sub-template.</code>
+That is to say loading a post file into a template file that refers to another template file with work in the way you&#8217;d expect; as a nested sub-template.</p>
+
+<h2 id="how-jekyll-generates-the-final-static-files">How Jekyll Generates the Final Static Files.</h2>
+
+<p>Ultimately, Jekyll&#8217;s job is to generate a static representation of your website.
+The following is an outline of how that&#8217;s done:</p>
+
+<ol>
+  <li>
+    <p><strong>Jekyll collects data.</strong>
+  Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.</p>
+  </li>
+  <li>
+    <p><strong>Jekyll computes data.</strong>
+  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
+  big <code>site</code> object that holds all the posts, pages, layouts, and respective metadata.
+  At this stage your site is one big computed ruby object.</p>
+  </li>
+  <li>
+    <p><strong>Jekyll liquifies posts and templates.</strong>
+  Next jekyll loops through each post file and converts (through markdown or textile) and <strong>liquifies</strong> the post inside of its respective layout(s).
+  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &#8220;liquified&#8221;.
+ <strong>Liquification</strong> is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
+  hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.</p>
+  </li>
+  <li>
+    <p><strong>Jekyll generates output.</strong>
+ Finally the liquid templates are &#8220;rendered&#8221;, thereby processing any liquid syntax provided in the templates
+ and saving the final, static representation of the file.</p>
+  </li>
+</ol>
+
+<p><strong>Notes.</strong>
+Because Jekyll computes the entire site in one fell swoop, each template is given access to
+a global <code>site</code> hash that contains useful data. It is this data that you&#8217;ll iterate through and format
+using the Liquid tags and filters in order to render it onto a given page.</p>
+
+<p>Remember, in Jekyll you are an end-user. Your API has only two components:</p>
+
+<ol>
+  <li>The manner in which you setup your directory.</li>
+  <li>The liquid syntax and variables passed into the liquid templates.</li>
+</ol>
+
+<p>All the data objects available to you in the templates via Liquid are outlined in the <strong>API Section</strong> of Jekyll-Bootstrap.
+You can also read the original documentation here: <a href="https://github.com/mojombo/jekyll/wiki/Template-Data">https://github.com/mojombo/jekyll/wiki/Template-Data</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
+As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.</p>
+
+<p>Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)</p>
+
+<p><strong>Thank you</strong> for reading this far.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Please take a look at []()
+or jump right into <a href="">Usage</a> if you&#8217;d like.</p>
+
+
+        
+          <h2><a href="/sample-post/">Sample Post</a></h2>
+          10 Mar 2011
+           <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#html-elements">HTML Elements</a></li>
+  <li><a href="#heading-1">Heading 1</a>    <ul>
+      <li><a href="#heading-2">Heading 2</a>        <ul>
+          <li><a href="#heading-3">Heading 3</a>            <ul>
+              <li><a href="#heading-4">Heading 4</a>                <ul>
+                  <li><a href="#heading-5">Heading 5</a>                    <ul>
+                      <li><a href="#heading-6">Heading 6</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#body-text">Body text</a></li>
+          <li><a href="#blockquotes">Blockquotes</a></li>
+        </ul>
+      </li>
+      <li><a href="#list-types">List Types</a>        <ul>
+          <li><a href="#ordered-lists">Ordered Lists</a></li>
+          <li><a href="#unordered-lists">Unordered Lists</a></li>
+        </ul>
+      </li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#code-snippets">Code Snippets</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<h2 id="html-elements">HTML Elements</h2>
+
+<p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<h6 id="heading-6">Heading 6</h6>
+
+<h3 id="body-text">Body text</h3>
+
+<p>Lorem ipsum dolor sit amet, test link adipiscing elit. <strong>This is strong</strong>. Nullam dignissim convallis est. Quisque aliquam.</p>
+
+<p class="image-pull-right"><img src="http://localhost:4000/images/3953273590_704e3899d5_m.jpg" alt="Smithsonian Image" /></p>
+
+<p><em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+<p>HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+
+<h3 id="blockquotes">Blockquotes</h3>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.</p>
+</blockquote>
+
+<h2 id="list-types">List Types</h2>
+
+<h3 id="ordered-lists">Ordered Lists</h3>
+
+<ol>
+  <li>Item one
+    <ol>
+      <li>sub item one</li>
+      <li>sub item two</li>
+      <li>sub item three</li>
+    </ol>
+  </li>
+  <li>Item two</li>
+</ol>
+
+<h3 id="unordered-lists">Unordered Lists</h3>
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+
+<h2 id="tables">Tables</h2>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="code-snippets">Code Snippets</h2>
+
+<div class="highlight"><pre><code class="css"><span class="nf">#container</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>Make any link standout more when applying the <code>.btn</code> class.</p>
+
+<div><a href="#" class="btn">This is a button</a></div>
+
+
+        
+    
+   </div>
+
+      </div>
+<!--      <hr>         -->
+
+		<div class="footer-wrap">
+		  <footer>
+			<p>&copy; 2014 Lords
+    with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a>
+</p>
+
+		  </footer>
+		</div><!-- /.footer-wrap -->
+	</div>
+
+<!-- Latex -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/themes/minimal-mistakes/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/themes/minimal-mistakes/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
