@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://data-scientist.github.com</loc>
+        <loc>http://data-scientist.github.io</loc>
     </url>
-    
+
     
     <url>
-        <loc>http://data-scientist.github.com/404.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://data-scientist.github.com/about/</loc>
+        <loc>http://data-scientist.github.io/404.html</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/archive.html</loc>
+        <loc>http://data-scientist.github.io/about/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/atom.xml</loc>
+        <loc>http://data-scientist.github.io/archive.html</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/categories.html</loc>
+        <loc>http://data-scientist.github.io/atom.xml</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/feed.xml</loc>
+        <loc>http://data-scientist.github.io/categories.html</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/index.html.bak</loc>
+        <loc>http://data-scientist.github.io/feed.xml</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/index.html</loc>
+        <loc>http://data-scientist.github.io/index.html.bak</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/pages.html</loc>
+        <loc>http://data-scientist.github.io/index.html</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/posts/</loc>
+        <loc>http://data-scientist.github.io/pages.html</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/rss.xml</loc>
+        <loc>http://data-scientist.github.io/posts/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/sitemap.txt</loc>
+        <loc>http://data-scientist.github.io/rss.xml</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/sitemap.xml</loc>
+        <loc>http://data-scientist.github.io/sitemap.txt</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/tags.html</loc>
+        <loc>http://data-scientist.github.io/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/theme-setup/</loc>
+        <loc>http://data-scientist.github.io/tags.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://data-scientist.github.io/theme-setup/</loc>
     </url>
     
 
     
     <url>
-        <loc>http://data-scientist.github.com/test%E5%88%86%E7%B1%BB/latex%E6%B5%8B%E8%AF%95/</loc>
+        <loc>http://data-scientist.github.io/test%E5%88%86%E7%B1%BB/latex%E6%B5%8B%E8%AF%95/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/r/RmdTest/</loc>
+        <loc>http://data-scientist.github.io/r/RmdTest/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/code-highlighting-post/</loc>
+        <loc>http://data-scientist.github.io/code-highlighting-post/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/readability-feature-post/</loc>
+        <loc>http://data-scientist.github.io/readability-feature-post/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/sample-post-images/</loc>
+        <loc>http://data-scientist.github.io/sample-post-images/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/r/knitr-jekyll/</loc>
+        <loc>http://data-scientist.github.io/r/knitr-jekyll/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/readability-post/</loc>
+        <loc>http://data-scientist.github.io/readability-post/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/lessons/jekyll-introduction/</loc>
+        <loc>http://data-scientist.github.io/lessons/jekyll-introduction/</loc>
     </url>
     
     <url>
-        <loc>http://data-scientist.github.com/sample-post/</loc>
+        <loc>http://data-scientist.github.io/sample-post/</loc>
     </url>
     
 </urlset>
