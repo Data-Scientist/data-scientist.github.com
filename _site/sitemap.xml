@@ -88,6 +88,10 @@
     </url>
     
     <url>
+        <loc>http://data-scientist.github.io/knitr-jekyll/</loc>
+    </url>
+    
+    <url>
         <loc>http://data-scientist.github.io/r/knitr-jekyll/</loc>
     </url>
     
@@ -97,6 +101,10 @@
     
     <url>
         <loc>http://data-scientist.github.io/lessons/jekyll-introduction/</loc>
+    </url>
+    
+    <url>
+        <loc>http://data-scientist.github.io/sample-post/</loc>
     </url>
     
     <url>

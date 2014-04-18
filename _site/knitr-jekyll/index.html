@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Step 1</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<p></p>
+
+<p>The <a href="http://yihui.name/knitr/">knitr</a> package provides an easy way to embed 
+<a href="http://www.r-project.org/">R</a> code in a <a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a> 
+blog post. The only required input is an <strong>R Markdown</strong> source file. 
+The name of the source file used to generate this post is <em>2012-07-03-knitr-jekyll.Rmd</em>, available
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/Rmd/2012-07-03-knitr-jekyll.Rmd">here</a>.
+Steps taken to build this post are as follows:</p>
+
+<p>new row test&hellip;&hellip;&hellip;&hellip;&hellip;</p>
+
+<h3>Step 1</h3>
+
+<p>Create a Jekyll-Boostrap blog if you don&#39;t already have one. 
+A brief tutorial on building this blog is available 
+<a href="/lessons/2012/05/30/jekyll-build-on-windows/">here</a>.</p>
+
+<h3>Step 2</h3>
+
+<p>Open the R Console and process the source file:</p>
+
+<p><div class="highlight"><pre><code class="s">KnitPost <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="kr">function</span><span class="p">(</span>input<span class="p">,</span> base.url <span class="o">=</span> <span class="o">&amp;</span>ldquo<span class="p">;</span><span class="o">/&amp;</span>rdquo<span class="p">;)</span> <span class="p">{</span>
+    require<span class="p">(</span>knitr<span class="p">)</span>
+    opts_knit\<span class="p">(</span> set<span class="p">(</span>base.url <span class="o">=</span> base.url<span class="p">)</span>
+    fig.path <span class="o">&lt;-</span> paste0<span class="p">(</span><span class="s">&quot;figs/&quot;</span><span class="p">,</span> sub<span class="p">(</span><span class="s">&quot;</span><span class="err">.Rmd \)&amp;quot;, &amp;ldquo;&amp;rdquo;, basename(input)), &amp;ldquo;/&amp;rdquo;)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.path <span class="o">=</span> fig.path<span class="p">)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.cap <span class="o">=</span> <span class="o">&amp;</span>ldquo<span class="p">;</span>center<span class="o">&amp;</span>rdquo<span class="p">;)</span>
+    render_jekyll<span class="p">()</span>
+    knit<span class="p">(</span>input<span class="p">,</span> envir <span class="o">=</span> parent.frame<span class="p">())</span>
+<span class="p">}</span>
+KnitPost<span class="p">(</span><span class="o">&amp;</span>ldquo<span class="p">;</span><span class="m">2012-07-03</span><span class="o">-</span>knitr<span class="o">-</span>jekyll.Rmd<span class="o">&amp;</span>rdquo<span class="p">;)</span>
+</code></pre></div></p>
+
+<h3>Step 3</h3>
+
+<p>Move the resulting image folder <em>2012-07-03-knitr-jekyll</em> and <strong>Markdown</strong> file 
+<em>2012-07-03-knitr-jekyll.md</em> to the local 
+<em>jfisher-usgs.github.com</em> <a href="http://git-scm.com/">git</a> repository.
+The KnitPost function assumes that the image folder will be placed in a 
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/tree/master/figs">figs</a> 
+folder located at the root of the repository.</p>
+
+<h3>Step 4</h3>
+
+<p>Add the following CSS code to the 
+<em>/assets/themes/twitter-2.0/css/bootstrap.min.css</em> file to center images:</p>
+
+<pre><code>[alt=center] {
+  display: block;
+  margin: auto;
+}
+</code></pre>
+
+<p>That&#39;s it.</p>
+
+<hr/>
+
+<p>Here are a few examples of embedding R code:</p>
+
+<p><div class="highlight"><pre><code class="s">summary<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div></p>
+
+<p><div class="highlight"><pre><code class="text">&lt;/p&gt;
+
+&lt;h2&gt;speed           dist&lt;/h2&gt;
+
+&lt;h2&gt;Min.   : 4.0   Min.   :  2&lt;/h2&gt;
+
+&lt;h2&gt;1st Qu.:12.0   1st Qu.: 26&lt;/h2&gt;
+
+&lt;h2&gt;Median :15.0   Median : 36&lt;/h2&gt;
+
+&lt;h2&gt;Mean   :15.4   Mean   : 43&lt;/h2&gt;
+
+&lt;h2&gt;3rd Qu.:19.0   3rd Qu.: 56&lt;/h2&gt;
+
+&lt;h2&gt;Max.   :25.0   Max.   :120&lt;/h2&gt;
+
+&lt;p&gt;
+</code></pre></div></p>
+
+<p><div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">0.1</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+plot<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div></p>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig1.png" alt="center"/> </p>
+
+<h5>Figure 1: Caption</h5>
+
+<p><div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">2.5</span><span class="p">,</span> <span class="m">2.5</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+filled.contour<span class="p">(</span>volcano<span class="p">)</span>
+</code></pre></div></p>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig2.png" alt="center"/> </p>
+
+<h5>Figure 2: Caption</h5>
+
+<p>And don&#39;t forget your session information for proper reproducible research.</p>
+
+<p><div class="highlight"><pre><code class="s">sessionInfo<span class="p">()</span>
+</code></pre></div></p>
+
+<p><div class="highlight"><pre><code class="text">&lt;/p&gt;
+
+&lt;h2&gt;R version 3.0.1 (2013-05-16)&lt;/h2&gt;
+
+&lt;h2&gt;Platform: x86_64-redhat-linux-gnu (64-bit)&lt;/h2&gt;
+
+&lt;h2&gt;locale:&lt;/h2&gt;
+
+&lt;h2&gt;[1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C&lt;/h2&gt;
+
+&lt;h2&gt;[3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8&lt;/h2&gt;
+
+&lt;h2&gt;[5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8&lt;/h2&gt;
+
+&lt;h2&gt;[7] LC_PAPER=C                 LC_NAME=C&lt;/h2&gt;
+
+&lt;h2&gt;[9] LC_ADDRESS=C               LC_TELEPHONE=C&lt;/h2&gt;
+
+&lt;h2&gt;[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C&lt;/h2&gt;
+
+&lt;h2&gt;attached base packages:&lt;/h2&gt;
+
+&lt;h2&gt;[1] stats     graphics  grDevices utils     datasets  methods   base&lt;/h2&gt;
+
+&lt;h2&gt;other attached packages:&lt;/h2&gt;
+
+&lt;h2&gt;[1] knitr_1.5&lt;/h2&gt;
+
+&lt;h2&gt;loaded via a namespace (and not attached):&lt;/h2&gt;
+
+&lt;h2&gt;[1] evaluate_0.5.1 formatR_0.10   stringr_0.6.2  tools_3.0.1&lt;/h2&gt;
+
+&lt;p&gt;
+</code></pre></div></p>
+
+</body>
+
+</html>
+

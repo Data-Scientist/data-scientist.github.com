@@ -20,7 +20,9 @@ http://data-scientist.github.io/r/RmdTest/
 http://data-scientist.github.io/code-highlighting-post/
 http://data-scientist.github.io/readability-feature-post/
 http://data-scientist.github.io/sample-post-images/
+http://data-scientist.github.io/knitr-jekyll/
 http://data-scientist.github.io/r/knitr-jekyll/
 http://data-scientist.github.io/readability-post/
 http://data-scientist.github.io/lessons/jekyll-introduction/
+http://data-scientist.github.io/sample-post/
 http://data-scientist.github.io/sample-post/

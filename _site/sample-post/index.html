@@ -488,7 +488,7 @@
 			  
 				<li><a href="/archive.html">Archive</a></li>
 			  
-				<li class="next"><a href="/lessons/jekyll-introduction/" title="Jekyll Introduction">Next &rarr;</a></li>
+				<li class="next"><a href="/sample-post/" title="Sample Post">Next &rarr;</a></li>
 			  
 			  </ul>
 			</div>
@@ -516,20 +516,22 @@
 	
 
 
-  <div id="disqus_thread"></div>
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-    var disqus_developer = 1;
-    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+var duoshuoQuery = {short_name:"data-scientist"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
 
 
 
@@ -554,7 +556,21 @@
 	</div>
 
 <!-- Latex -->
+
+function typeset() {
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Comments latex
+ MathJax.Hub.Config({
+	tex2jax: {
+	inlineMath: [['$','$'], ['\\(','\\)']],
+	processEscapes: true
+	}
+});
+-->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/themes/minimal-mistakes/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

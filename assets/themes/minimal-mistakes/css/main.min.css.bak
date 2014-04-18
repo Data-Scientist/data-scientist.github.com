@@ -1567,7 +1567,7 @@ input[disabled],select[disabled],textarea[disabled],input[readonly],select[reado
 input:focus,textarea:focus {
 	border-color: #111;
 	outline: 0;
-	outline: thin dotted \9
+	outline: thin dotted \9
 }
 
 input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,select:focus
