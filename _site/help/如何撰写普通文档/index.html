@@ -1,0 +1,614 @@
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>如何撰写普通文档 &#8211; Library of Data Scientist</title>
+<meta name="description" content="如何在文档中内嵌R、Python等语言实现文学编程以及如何在文档内撰写数学公式和实现语法高亮">
+<meta name="author" content="Lords">
+<meta name="keywords" content="help, jekyll, writing">
+
+<!-- Highlight code -->
+<link rel="stylesheet" href="/pygments.css">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/">
+<meta name="twitter:title" content="如何撰写普通文档">
+<meta name="twitter:description" content="如何在文档中内嵌R、Python等语言实现文学编程以及如何在文档内撰写数学公式和实现语法高亮">
+<meta name="twitter:creator" content="@N/A">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何撰写普通文档">
+<meta property="og:description" content="如何在文档中内嵌R、Python等语言实现文学编程以及如何在文档内撰写数学公式和实现语法高亮">
+<meta property="og:url" content="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/">
+<meta property="og:site_name" content="Library of Data Scientist">
+
+
+
+
+
+<link rel="canonical" href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Library of Data Scientist Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Google Webfonts -->
+<!--
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+-->
+	<!-- For all browsers, rich but ugly-->
+<link rel="stylesheet" href="/assets/themes/minimal-mistakes/css/main.min.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+	<link href="/assets/themes/minimal-mistakes/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/minimal-mistakes/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<link href="/assets/themes/minimal-mistakes/bootstrap/css/font-awesome.min.css" rel="stylesheet" >
+
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="/assets/themes/minimal-mistakes/js/vendor/html5shiv.min.js"></script>
+	<script src="/assets/themes/minimal-mistakes/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/themes/minimal-mistakes/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body>
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="/">Library of Data Scientist</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				<li><a href="/about/" >About</a></li>
+		        
+				<li><a href="/posts/" >Posts</a></li>
+		        
+				<li><a href="/projects/" >Projects</a></li>
+		        
+				<li><a href="/books/" >Books</a></li>
+		        
+				<li><a href="/courses/" >Courses</a></li>
+		        
+				<li><a href="/help/" target="_blank">Help</a></li>
+		        
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+<!--
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Library of Data Scientist</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+-->
+
+
+
+   <!-- <div class="container-narrow"> -->
+   <div>
+
+      <div class="content">
+        
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    <img src="/images/bio-photo.jpg" class="bio-photo" alt="Lords bio photo"></a>
+<h3>Lords</h3>
+<p>About Lords, waiting ... </p>
+<a href="http://twitter.com/N/A" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+
+
+
+
+<a href="http://github.com/data-scientist" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      <h1>如何撰写普通文档 </h1>
+    </div><!--/ .headline-wrap -->
+
+    <div class="article-wrap">
+
+		<div class="row-fluid post-full">
+		  <div class="span12">
+			<div class="date">
+			  <span>18 April 2014</span>
+			</div>
+			<div class="content">
+			  
+<h1 id="title">Title</h1>
+
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the <strong>Help</strong> toolbar button for more details on using R Markdown).</p>
+
+<p>When you click the <strong>Knit HTML</strong> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+<div class="highlight"><pre><code class="s">summary<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">##      speed           dist
+##  Min.   : 4.0   Min.   :  2
+##  1st Qu.:12.0   1st Qu.: 26
+##  Median :15.0   Median : 36
+##  Mean   :15.4   Mean   : 43
+##  3rd Qu.:19.0   3rd Qu.: 56
+##  Max.   :25.0   Max.   :120
+</code></pre></div>
+
+<p>You can also embed plots, for example:</p>
+
+<div class="highlight"><pre><code class="s">plot<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2014-03-03-RmdTest/fig1.png" alt="center" /></p>
+
+<h5 id="figure-1-">Figure 1: 汽车</h5>
+
+<div class="highlight"><pre><code class="s">\tao <span class="o">=</span> \miu
+</code></pre></div>
+
+<p>混编Latex：</p>
+
+<p>先给出一个行内Latex公式到例子，<script type="math/tex">ChooseMove：B \to M</script>，然后看一个段间到例子：
+建议在rmd中inline latex用一个$号预览，md中改为2个$号渲染</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+V(b) =
+\begin{cases}
+100, & \text{若 $b$ 是最终的胜局} \\
+-100, & \text{若 $b$ 是最终的负局} \\
+0, & \text{若 $b$ 是最终的和局} \\
+V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+ %]]></script>
+
+<p>看看会如何？</p>
+
+<p>Does <strong>knitr</strong> work with Python? Use the chunk option <code>engine='python'</code>:</p>
+
+<div class="highlight"><pre><code class="python"><span class="n">x</span> <span class="o">=</span> <span class="s">&#39;hello, python world!&#39;</span>
+<span class="k">print</span> <span class="n">x</span>
+<span class="k">print</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">## hello, python world!
+## [&#39;hello,&#39;, &#39;python&#39;, &#39;world!&#39;]
+</code></pre></div>
+
+<p>The <a href="http://yihui.name/knitr/">knitr</a> package provides an easy way to embed
+<a href="http://www.r-project.org/">R</a> code in a <a href="http://jekyllbootstrap.com/">Jekyll-Bootstrap</a>
+blog post. The only required input is an <strong>R Markdown</strong> source file.
+The name of the source file used to generate this post is <em>2012-07-03-knitr-jekyll.Rmd</em>, available
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/Rmd/2012-07-03-knitr-jekyll.Rmd">here</a>.
+Steps taken to build this post are as follows:</p>
+
+<p>new row test……………</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Create a Jekyll-Boostrap blog if you don’t already have one.
+A brief tutorial on building this blog is available
+<a href="/lessons/2012/05/30/jekyll-build-on-windows/">here</a>.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Open the R Console and process the source file:</p>
+
+<div class="highlight"><pre><code class="s">KnitPost <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>input<span class="p">,</span> base.url <span class="o">=</span> <span class="s">&quot;/&quot;</span><span class="p">)</span> <span class="p">{</span>
+    require<span class="p">(</span>knitr<span class="p">)</span>
+    opts_knit<span class="o">$</span>set<span class="p">(</span>base.url <span class="o">=</span> base.url<span class="p">)</span>
+    fig.path <span class="o">&lt;-</span> paste0<span class="p">(</span><span class="s">&quot;figs/&quot;</span><span class="p">,</span> sub<span class="p">(</span><span class="s">&quot;.Rmd$&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> basename<span class="p">(</span>input<span class="p">)),</span> <span class="s">&quot;/&quot;</span><span class="p">)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.path <span class="o">=</span> fig.path<span class="p">)</span>
+    opts_chunk<span class="o">$</span>set<span class="p">(</span>fig.cap <span class="o">=</span> <span class="s">&quot;center&quot;</span><span class="p">)</span>
+    render_jekyll<span class="p">()</span>
+    knit<span class="p">(</span>input<span class="p">,</span> envir <span class="o">=</span> parent.frame<span class="p">())</span>
+<span class="p">}</span>
+KnitPost<span class="p">(</span><span class="s">&quot;2012-07-03-knitr-jekyll.Rmd&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Move the resulting image folder <em>2012-07-03-knitr-jekyll</em> and <strong>Markdown</strong> file
+<em>2012-07-03-knitr-jekyll.md</em> to the local
+<em>jfisher-usgs.github.com</em> <a href="http://git-scm.com/">git</a> repository.
+The KnitPost function assumes that the image folder will be placed in a
+<a href="https://github.com/jfisher-usgs/jfisher-usgs.github.com/tree/master/figs">figs</a>
+folder located at the root of the repository.</p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Add the following CSS code to the
+<em>/assets/themes/twitter-2.0/css/bootstrap.min.css</em> file to center images:</p>
+
+<pre><code>[alt=center] {
+  display: block;
+  margin: auto;
+}
+</code></pre>
+
+<p>That’s it.</p>
+
+<hr />
+
+<p>Here are a few examples of embedding R code:</p>
+
+<div class="highlight"><pre><code class="s">summary<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">##      speed           dist
+##  Min.   : 4.0   Min.   :  2
+##  1st Qu.:12.0   1st Qu.: 26
+##  Median :15.0   Median : 36
+##  Mean   :15.4   Mean   : 43
+##  3rd Qu.:19.0   3rd Qu.: 56
+##  Max.   :25.0   Max.   :120
+</code></pre></div>
+
+<div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">0.1</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+plot<span class="p">(</span>cars<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig1.png" alt="center" /></p>
+
+<h5 id="figure-1-caption">Figure 1: Caption</h5>
+
+<div class="highlight"><pre><code class="s">par<span class="p">(</span>mar <span class="o">=</span> c<span class="p">(</span><span class="m">2.5</span><span class="p">,</span> <span class="m">2.5</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.1</span><span class="p">),</span> omi <span class="o">=</span> c<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span>
+filled.contour<span class="p">(</span>volcano<span class="p">)</span>
+</code></pre></div>
+
+<p><img src="/figures/2012-07-03-knitr-jekyll/fig2.png" alt="center" /></p>
+
+<h5 id="figure-2-caption">Figure 2: Caption</h5>
+
+<p>And don’t forget your session information for proper reproducible research.</p>
+
+<div class="highlight"><pre><code class="s">sessionInfo<span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><code class="text">## R version 3.0.1 (2013-05-16)
+## Platform: x86_64-redhat-linux-gnu (64-bit)
+##
+## locale:
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8
+##  [7] LC_PAPER=C                 LC_NAME=C
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C
+##
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base
+##
+## other attached packages:
+## [1] knitr_1.5
+##
+## loaded via a namespace (and not attached):
+## [1] evaluate_0.5.1 formatR_0.10   stringr_0.6.2  tools_3.0.1
+</code></pre></div>
+
+
+			</div>
+<br>
+		  
+			<ul class="tag_box inline">
+			  <li><i class="icon-folder-open"></i></li>
+			  
+			  
+
+
+  
+     
+    	<li><a href="/categories.html#help-ref">
+    		help <span>4</span>
+    	</a></li>
+    
+  
+
+
+			</ul>
+		  
+
+		  
+			<ul class="tag_box inline">
+			  <li><i class="icon-tags"></i></li>
+			  
+			  
+
+
+  
+     
+    	<li><a href="/tags.html#help-ref">help <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#writing-ref">writing <span>4</span></a></li>
+    
+  
+
+
+
+			</ul>
+		  
+
+			<hr>
+		  </div>
+		</div>
+
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="/images/bio-photo.jpg" class="bio-photo" alt="Lords bio photo"></a>
+<h3>Lords</h3>
+<p>About Lords, waiting ... </p>
+<a href="http://twitter.com/N/A" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+
+
+
+
+<a href="http://github.com/data-scientist" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>如何撰写普通文档</strong> was published on <time datetime="2014-04-18T00:00:00+00:00">April 18, 2014</time> by <a href="/about" title="About Lords">Lords</a>.</p>
+      </footer>
+
+	  <div class="row-fluid post-full">
+		  <div class="span12">
+	  <div class="pagination">
+			  <ul>
+			  
+				<li class="prev"><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/" title="如何撰写图片文档">&larr; Previous</a></li>
+			  
+				<li><a href="/archive.html">Archive</a></li>
+			  
+				<li class="next"><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/" title="如何撰写项目文档">Next &rarr;</a></li>
+			  
+			  </ul>
+			</div>
+			</div>
+			</div>
+
+			 <hr />
+    </div><!-- /.article-wrap -->
+</article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/" title="如何撰写项目文档">如何撰写项目文档</a></li>
+    
+      <li><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/" title="如何撰写图片文档">如何撰写图片文档</a></li>
+    
+      <li><a href="/help/Post+%E6%A8%A1%E6%9D%BF/" title="Post 模板">Post 模板</a></li>
+    
+    </ul>
+    <hr />
+	
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"data-scientist"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+  </div><!-- /.related-articles -->
+</div><!-- /.footer-wrap -->
+
+
+
+      </div>
+<!--      <hr>         -->
+
+		<div class="footer-wrap">
+		  <footer>
+			<p>&copy; 2014 Lords
+    with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a>
+</p>
+
+		  </footer>
+		</div><!-- /.footer-wrap -->
+	</div>
+
+<!-- Latex -->
+
+function typeset() {
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Comments latex
+ MathJax.Hub.Config({
+	tex2jax: {
+	inlineMath: [['$','$'], ['\\(','\\)']],
+	processEscapes: true
+	}
+});
+-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/themes/minimal-mistakes/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/themes/minimal-mistakes/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
