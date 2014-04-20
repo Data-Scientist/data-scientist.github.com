@@ -5,8 +5,8 @@
         <description>Library of Data Scientist - </description>
         <link>http://data-scientist.github.io</link>
         <link>http://data-scientist.github.io</link>
-        <lastBuildDate>2014-04-20T13:00:46+00:00</lastBuildDate>
-        <pubDate>2014-04-20T13:00:46+00:00</pubDate>
+        <lastBuildDate>2014-04-20T13:44:49+00:00</lastBuildDate>
+        <pubDate>2014-04-20T13:44:49+00:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -407,74 +407,121 @@ filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span clas
         </item>
 
         <item>
-                <title>RmdTest</title>
+                <title>Blog with Knitr and Jekyll</title>
                 <description>
-&lt;h1 id=&quot;title&quot;&gt;Title&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&quot;http://yihui.name/knitr/&quot;&gt;knitr&lt;/a&gt; package provides an easy way to embed 
+&lt;a href=&quot;http://www.r-project.org/&quot;&gt;R&lt;/a&gt; code in a &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;Jekyll-Bootstrap&lt;/a&gt; 
+blog post. The only required input is an &lt;strong&gt;R Markdown&lt;/strong&gt; source file. 
+The name of the source file used to generate this post is &lt;em&gt;2012-07-03-knitr-jekyll.Rmd&lt;/em&gt;, available
+&lt;a href=&quot;https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/Rmd/2012-07-03-knitr-jekyll.Rmd&quot;&gt;here&lt;/a&gt;.
+Steps taken to build this post are as follows:&lt;/p&gt;
 
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the &lt;strong&gt;Help&lt;/strong&gt; toolbar button for more details on using R Markdown).&lt;/p&gt;
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
 
-&lt;p&gt;When you click the &lt;strong&gt;Knit HTML&lt;/strong&gt; button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+&lt;p&gt;Create a Jekyll-Boostrap blog if you don&amp;#8217;t already have one. 
+A brief tutorial on building this blog is available 
+&lt;a href=&quot;/lessons/2012/05/30/jekyll-build-on-windows/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;r
-summary(cars)
-&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;
-##      speed           dist    
+&lt;p&gt;Open the R Console and process the source file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;KnitPost &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; base.url &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    require&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;knitr&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    opts_knit&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;set&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;base.url &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; base.url&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    fig.path &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; paste0&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;figs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; sub&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;.Rmd$&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; basename&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    opts_chunk&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;set&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;fig.path &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; fig.path&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    opts_chunk&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;set&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;fig.cap &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;center&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    render_jekyll&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    knit&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;input&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; envir &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; parent.frame&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+KnitPost&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;2012-07-03-knitr-jekyll.Rmd&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;Move the resulting image folder &lt;em&gt;2012-07-03-knitr-jekyll&lt;/em&gt; and &lt;strong&gt;Markdown&lt;/strong&gt; file 
+&lt;em&gt;2012-07-03-knitr-jekyll.md&lt;/em&gt; to the local 
+&lt;em&gt;jfisher-usgs.github.com&lt;/em&gt; &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt; repository.
+The KnitPost function assumes that the image folder will be placed in a 
+&lt;a href=&quot;https://github.com/jfisher-usgs/jfisher-usgs.github.com/tree/master/figs&quot;&gt;figs&lt;/a&gt; 
+folder located at the root of the repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4&quot;&gt;Step 4&lt;/h3&gt;
+
+&lt;p&gt;Add the following CSS code to the 
+&lt;em&gt;/assets/themes/twitter-2.0/css/bootstrap.min.css&lt;/em&gt; file to center images:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[alt=center] {
+  display: block;
+  margin: auto;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;#8217;s it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here are a few examples of embedding R code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;summary&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;##      speed           dist    
 ##  Min.   : 4.0   Min.   :  2  
 ##  1st Qu.:12.0   1st Qu.: 26  
 ##  Median :15.0   Median : 36  
 ##  Mean   :15.4   Mean   : 43  
 ##  3rd Qu.:19.0   3rd Qu.: 56  
 ##  Max.   :25.0   Max.   :120
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;par&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;mar &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; c&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; omi &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; c&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;r
-plot(cars)
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/figures/2012-07-03-knitr-jekyll/fig1.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;figure/fig1.png&quot; alt=&quot;plot of chunk fig1&quot; /&gt; &lt;/p&gt;
+&lt;h5 id=&quot;figure-1-caption&quot;&gt;Figure 1: Caption&lt;/h5&gt;
 
-&lt;h5 id=&quot;figure-1-&quot;&gt;Figure 1: 汽车&lt;/h5&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;par&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;mar &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; c&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; omi &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; c&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;混编Latex：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/figures/2012-07-03-knitr-jekyll/fig2.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
 
-&lt;p&gt;先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：&lt;/p&gt;
+&lt;h5 id=&quot;figure-2-caption&quot;&gt;Figure 2: Caption&lt;/h5&gt;
 
-&lt;p&gt;&lt;code&gt;r
-\tao = \miu
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;And don&amp;#8217;t forget your session information for proper reproducible research.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;sessionInfo&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-V(b) = 
-\begin{cases}
-100, &amp; \text{若 $b$ 是最终的胜局} \\
--100, &amp; \text{若 $b$ 是最终的负局} \\
-0, &amp; \text{若 $b$ 是最终的和局} \\
-V(b'), &amp; \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
-\end{cases}
- %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Does &lt;strong&gt;knitr&lt;/strong&gt; work with Python? Use the chunk option &lt;code&gt;engine='python'&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;python
-x = 'hello, python world!'
-print x
-print x.split(' ')
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-## hello, python world!
-## ['hello,', 'python', 'world!']
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;## R version 3.0.1 (2013-05-16)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## 
+## locale:
+## [1] LC_COLLATE=Chinese (Simplified)_People&amp;#39;s Republic of China.936 
+## [2] LC_CTYPE=Chinese (Simplified)_People&amp;#39;s Republic of China.936   
+## [3] LC_MONETARY=Chinese (Simplified)_People&amp;#39;s Republic of China.936
+## [4] LC_NUMERIC=C                                                   
+## [5] LC_TIME=Chinese (Simplified)_People&amp;#39;s Republic of China.936    
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] knitr_1.5
+## 
+## loaded via a namespace (and not attached):
+## [1] evaluate_0.5.1 formatR_0.10   markdown_0.6.4 stringr_0.6.2 
+## [5] tools_3.0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
-                <link>http://data-scientist.github.io/r/RmdTest/</link>
-                <guid>http://data-scientist.github.io/r/RmdTest</guid>
-                <pubDate>2014-03-03T00:00:00+00:00</pubDate>
+                <link>http://data-scientist.github.io/r/knitr-jekyll/</link>
+                <guid>http://data-scientist.github.io/r/knitr-jekyll</guid>
+                <pubDate>2012-07-03T00:00:00+00:00</pubDate>
         </item>
 
         <item>

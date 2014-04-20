@@ -17,5 +17,5 @@ http://data-scientist.github.io/theme-setup/
 http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/
 http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/
 http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/
-http://data-scientist.github.io/r/RmdTest/
+http://data-scientist.github.io/r/knitr-jekyll/
 http://data-scientist.github.io/help/Post+%E6%A8%A1%E6%9D%BF/
