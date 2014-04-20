@@ -6,20 +6,19 @@
 <!--[if gt IE 8]><!--> <html lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>About the Theme &#8211; Library of Data Scientist</title>
+<title>RmdTest &#8211; Library of Data Scientist</title>
 <meta name="description" content="">
 <meta name="author" content="Lords">
-<meta name="keywords" content="about, Jekyll, theme, responsive">
+<meta name="keywords" content="knitr, jekyll, tutorial">
 
 <!-- Highlight code -->
 <link rel="stylesheet" href="/pygments.css">
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="/images/texture-feature-02.jpg">
-
-<meta name="twitter:title" content="About the Theme">
-<meta name="twitter:description" content="Describe your website.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/">
+<meta name="twitter:title" content="RmdTest">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@N/A">
 
 <!-- Enable responsive viewport -->
@@ -29,16 +28,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="About the Theme">
-<meta property="og:description" content="Describe your website.">
-<meta property="og:url" content="/about/">
+<meta property="og:title" content="RmdTest">
+<meta property="og:description" content="">
+<meta property="og:url" content="/r/RmdTest/">
 <meta property="og:site_name" content="Library of Data Scientist">
 
 
 
 
 
-<link rel="canonical" href="/about/">
+<link rel="canonical" href="/r/RmdTest/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Library of Data Scientist Feed">
 
 
@@ -226,10 +225,7 @@
     </div>
 -->
 
-<div class="image-wrap">
-  <img src="/images/texture-feature-02.jpg" alt="About the Theme feature image">
-  <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
-</div><!-- /.image-wrap -->
+
 
    <!-- <div class="container-narrow"> -->
    <div>
@@ -257,77 +253,212 @@
 
   </div>
   <article>
-    <h1>About the Theme</h1>
+    <div class="headline-wrap">
+      <h1>RmdTest </h1>
+    </div><!--/ .headline-wrap -->
+
     <div class="article-wrap">
-      
-<p>Jekyll is pretty rad and figured releasing a cleaned up version of <a href="http://mademistakes.com">my site</a><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> as a theme for others to hack and build on would be fun. So here be that theme &#8212; I call it <strong>Minimal Mistakes</strong>, a responsive Jekyll theme with large featured images and solid typography.</p>
 
-<h2 id="minimal-mistakes-is-all-about">Minimal Mistakes is all about:</h2>
+		<div class="row-fluid post-full">
+		  <div class="span12">
+			<div class="date">
+			  <span>03 March 2014</span>
+			</div>
+			<div class="content">
+			  
+<h1 id="title">Title</h1>
 
-<ul>
-  <li>Responsive templates. Looking good on mobile, tablet, and desktop.</li>
-  <li>Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.</li>
-  <li>Minimal embellishments &#8212; content first.</li>
-  <li>Large feature images for posts and pages.</li>
-  <li>Author sidebar to pimp your bio, photo<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, and social media links.</li>
-  <li>Simple and clear permalink structure <em>(ie: domain.com/category/post-title)</em></li>
-</ul>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the <strong>Help</strong> toolbar button for more details on using R Markdown).</p>
 
-<p><a href="/theme-setup" class="btn">Install Minimal Mistakes Theme</a></p>
+<p>When you click the <strong>Knit HTML</strong> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Since open sourcing this theme I have released a couple other Jekyll themes. My website <a href="http://mademistakes.com">Made Mistakes</a> is currently using a modified version of my <a href="http://mmistakes.github.io/so-simple-theme/">So Simple Theme</a>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>Fancy avatars provided by <a href="http://brandonmathis.com/projects/fancy-avatars/demo/">Brandon Mathis</a> under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p><code>r
+summary(cars)
+</code></p>
 
-    </div><!-- /.article-wrap -->
-  </article>
-</div><!-- /#index -->
+<p><code>
+##      speed           dist    
+##  Min.   : 4.0   Min.   :  2  
+##  1st Qu.:12.0   1st Qu.: 26  
+##  Median :15.0   Median : 36  
+##  Mean   :15.4   Mean   : 43  
+##  3rd Qu.:19.0   3rd Qu.: 56  
+##  Max.   :25.0   Max.   :120
+</code></p>
+
+<p>You can also embed plots, for example:</p>
+
+<p><code>r
+plot(cars)
+</code></p>
+
+<p><img src="figure/fig1.png" alt="plot of chunk fig1" /> </p>
+
+<h5 id="figure-1-">Figure 1: 汽车</h5>
+
+<p>混编Latex：</p>
+
+<p>先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：</p>
+
+<p><code>r
+\tao = \miu
+</code></p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+V(b) = 
+\begin{cases}
+100, & \text{若 $b$ 是最终的胜局} \\
+-100, & \text{若 $b$ 是最终的负局} \\
+0, & \text{若 $b$ 是最终的和局} \\
+V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+ %]]></script>
+
+<p>Does <strong>knitr</strong> work with Python? Use the chunk option <code>engine='python'</code>:</p>
+
+<p><code>python
+x = 'hello, python world!'
+print x
+print x.split(' ')
+</code></p>
+
+<p><code>
+## hello, python world!
+## ['hello,', 'python', 'world!']
+</code></p>
 
 
-<!--
-<div class="page-header">
-  <h1>About the Theme  <small>Minimal Mistakes, a Jekyll Theme</small></h1>
-</div>
+			</div>
+<br>
+		  
+			<ul class="tag_box inline">
+			  <li><i class="icon-folder-open"></i></li>
+			  
+			  
 
-<div class="row-fluid">
-  <div class="span12">
+
+  
+     
+    	<li><a href="/categories.html#r-ref">
+    		r <span>1</span>
+    	</a></li>
     
-<p>Jekyll is pretty rad and figured releasing a cleaned up version of <a href="http://mademistakes.com">my site</a><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> as a theme for others to hack and build on would be fun. So here be that theme &#8212; I call it <strong>Minimal Mistakes</strong>, a responsive Jekyll theme with large featured images and solid typography.</p>
+  
 
-<h2 id="minimal-mistakes-is-all-about">Minimal Mistakes is all about:</h2>
 
-<ul>
-  <li>Responsive templates. Looking good on mobile, tablet, and desktop.</li>
-  <li>Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.</li>
-  <li>Minimal embellishments &#8212; content first.</li>
-  <li>Large feature images for posts and pages.</li>
-  <li>Author sidebar to pimp your bio, photo<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, and social media links.</li>
-  <li>Simple and clear permalink structure <em>(ie: domain.com/category/post-title)</em></li>
-</ul>
+			</ul>
+		  
 
-<p><a href="/theme-setup" class="btn">Install Minimal Mistakes Theme</a></p>
+		  
+			<ul class="tag_box inline">
+			  <li><i class="icon-tags"></i></li>
+			  
+			  
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Since open sourcing this theme I have released a couple other Jekyll themes. My website <a href="http://mademistakes.com">Made Mistakes</a> is currently using a modified version of my <a href="http://mmistakes.github.io/so-simple-theme/">So Simple Theme</a>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>Fancy avatars provided by <a href="http://brandonmathis.com/projects/fancy-avatars/demo/">Brandon Mathis</a> under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
-  </div>
-</div>
--->
+  
+     
+    	<li><a href="/tags.html#knitr-ref">knitr <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span>5</span></a></li>
+     
+    	<li><a href="/tags.html#tutorial-ref">tutorial <span>1</span></a></li>
+    
+  
+
+
+
+			</ul>
+		  
+
+			<hr>
+		  </div>
+		</div>
+
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="/images/bio-photo.jpg" class="bio-photo" alt="Lords bio photo"></a>
+<h3>Lords</h3>
+<p>About Lords, waiting ... </p>
+<a href="http://twitter.com/N/A" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+
+
+
+
+<a href="http://github.com/data-scientist" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>RmdTest</strong> was published on <time datetime="2014-03-03T00:00:00+00:00">March 03, 2014</time> by <a href="/about" title="About Lords">Lords</a>.</p>
+      </footer>
+
+	  <div class="row-fluid post-full">
+		  <div class="span12">
+	  <div class="pagination">
+			  <ul>
+			  
+				<li class="prev"><a href="/help/Post+%E6%A8%A1%E6%9D%BF/" title="Post 模板">&larr; Previous</a></li>
+			  
+				<li><a href="/archive.html">Archive</a></li>
+			  
+				<li class="next"><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/" title="如何撰写图片文档">Next &rarr;</a></li>
+			  
+			  </ul>
+			</div>
+			</div>
+			</div>
+
+			 <hr />
+    </div><!-- /.article-wrap -->
+</article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/" title="如何撰写项目文档">如何撰写项目文档</a></li>
+    
+      <li><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/" title="如何撰写普通文档">如何撰写普通文档</a></li>
+    
+      <li><a href="/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/" title="如何撰写图片文档">如何撰写图片文档</a></li>
+    
+    </ul>
+    <hr />
+	
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="" data-title="" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"data-scientist"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+  </div><!-- /.related-articles -->
+</div><!-- /.footer-wrap -->
+
+
 
       </div>
 <!--      <hr>         -->

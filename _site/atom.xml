@@ -4,7 +4,7 @@
  <title>Library of Data Scientist</title>
  <link href="http://data-scientist.github.io/" rel="self"/>
  <link href="http://data-scientist.github.io"/>
- <updated>2014-04-18T07:47:44+00:00</updated>
+ <updated>2014-04-20T13:00:46+00:00</updated>
  <id>http://data-scientist.github.io</id>
  <author>
    <name></name>
@@ -405,6 +405,77 @@ filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span clas
 	&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>RmdTest</title>
+   <link href="http://data-scientist.github.io/r/RmdTest/"/>
+   <updated>2014-03-03T00:00:00+00:00</updated>
+   <id>http://data-scientist.github.io/r/RmdTest</id>
+   <content type="html">
+&lt;h1 id=&quot;title&quot;&gt;Title&lt;/h1&gt;
+
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the &lt;strong&gt;Help&lt;/strong&gt; toolbar button for more details on using R Markdown).&lt;/p&gt;
+
+&lt;p&gt;When you click the &lt;strong&gt;Knit HTML&lt;/strong&gt; button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;r
+summary(cars)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+##      speed           dist    
+##  Min.   : 4.0   Min.   :  2  
+##  1st Qu.:12.0   1st Qu.: 26  
+##  Median :15.0   Median : 36  
+##  Mean   :15.4   Mean   : 43  
+##  3rd Qu.:19.0   3rd Qu.: 56  
+##  Max.   :25.0   Max.   :120
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;r
+plot(cars)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;figure/fig1.png&quot; alt=&quot;plot of chunk fig1&quot; /&gt; &lt;/p&gt;
+
+&lt;h5 id=&quot;figure-1-&quot;&gt;Figure 1: 汽车&lt;/h5&gt;
+
+&lt;p&gt;混编Latex：&lt;/p&gt;
+
+&lt;p&gt;先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;r
+\tao = \miu
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+
+V(b) = 
+\begin{cases}
+100, &amp; \text{若 $b$ 是最终的胜局} \\
+-100, &amp; \text{若 $b$ 是最终的负局} \\
+0, &amp; \text{若 $b$ 是最终的和局} \\
+V(b'), &amp; \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+ %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Does &lt;strong&gt;knitr&lt;/strong&gt; work with Python? Use the chunk option &lt;code&gt;engine='python'&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python
+x = 'hello, python world!'
+print x
+print x.split(' ')
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+## hello, python world!
+## ['hello,', 'python', 'world!']
+&lt;/code&gt;&lt;/p&gt;
+
 </content>
  </entry>
  
