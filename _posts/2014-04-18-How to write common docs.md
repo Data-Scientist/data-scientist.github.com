@@ -1,11 +1,85 @@
 ---
 layout: post
-title: "Blog with Knitr and Jekyll"
-description: ""
-category: r
-tags: [knitr, jekyll, tutorial]
+title: "如何撰写普通文档"
+description: "如何在文档中内嵌R、Python等语言实现文学编程以及如何在文档内撰写数学公式和实现语法高亮"
+category: HELP
+tags: [help, jekyll, writing]
 ---
 {% include JB/setup %}
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
+
+When you click the **Knit HTML** button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+{% highlight r %}
+summary(cars)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+##      speed           dist    
+##  Min.   : 4.0   Min.   :  2  
+##  1st Qu.:12.0   1st Qu.: 26  
+##  Median :15.0   Median : 36  
+##  Mean   :15.4   Mean   : 43  
+##  3rd Qu.:19.0   3rd Qu.: 56  
+##  Max.   :25.0   Max.   :120
+{% endhighlight %}
+
+
+You can also embed plots, for example:
+
+
+{% highlight r %}
+plot(cars)
+{% endhighlight %}
+
+![center](/figures/2014-04-18-How_to_write_common_docs/fig1.png) 
+
+##### Figure 1: 汽车
+
+混编Latex：
+
+先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：
+
+
+{% highlight r %}
+\tao = \miu
+{% endhighlight %}
+
+
+$$
+V(b) = 
+\begin{cases}
+100, & \text{若 $b$ 是最终的胜局} \\
+-100, & \text{若 $b$ 是最终的负局} \\
+0, & \text{若 $b$ 是最终的和局} \\
+V(b'), & \text{$b'$ 是从 $b$ 开始双方都采取最有对弈后可到达的终局}
+\end{cases}
+$$
+
+
+Does **knitr** work with Python? Use the chunk option `engine='python'`:
+
+
+{% highlight python %}
+x = 'hello, python world!'
+print x
+print x.split(' ')
+{% endhighlight %}
+
+
+
+
+{% highlight text %}
+## hello, python world!
+## ['hello,', 'python', 'world!']
+{% endhighlight %}
+
+
 
 The [knitr](http://yihui.name/knitr/) package provides an easy way to embed 
 [R](http://www.r-project.org/) code in a [Jekyll-Bootstrap](http://jekyllbootstrap.com/) 
@@ -86,9 +160,9 @@ par(mar = c(4, 4, 0.1, 0.1), omi = c(0, 0, 0, 0))
 plot(cars)
 {% endhighlight %}
 
-![center](/figures/2012-07-03-knitr-jekyll/fig1.png) 
+![center](/figures/2014-04-18-How_to_write_common_docs/fig2.png) 
 
-##### Figure 1: Caption
+##### Figure 2: Caption
 
 
 {% highlight r %}
@@ -96,9 +170,9 @@ par(mar = c(2.5, 2.5, 0.5, 0.1), omi = c(0, 0, 0, 0))
 filled.contour(volcano)
 {% endhighlight %}
 
-![center](/figures/2012-07-03-knitr-jekyll/fig2.png) 
+![center](/figures/2014-04-18-How_to_write_common_docs/fig3.png) 
 
-##### Figure 2: Caption
+##### Figure 3: Caption
 
 And don't forget your session information for proper reproducible research.
 
@@ -109,7 +183,7 @@ sessionInfo()
 
 
 {% highlight text %}
-## R version 3.0.1 (2013-05-16)
+## R version 3.1.0 (2014-04-10)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## 
 ## locale:
@@ -126,7 +200,6 @@ sessionInfo()
 ## [1] knitr_1.5
 ## 
 ## loaded via a namespace (and not attached):
-## [1] evaluate_0.5.1 formatR_0.10   markdown_0.6.4 stringr_0.6.2 
-## [5] tools_3.0.1
+## [1] evaluate_0.5.3 formatR_0.10   stringr_0.6.2  tools_3.1.0
 {% endhighlight %}
 
