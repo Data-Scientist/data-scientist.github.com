@@ -5,10 +5,10 @@
 	—— // 这里补充新文件的分类，归档，制定显示子频道的过程
 	
     —— 2.1 将最新的Rmd源文件放在"_draft/src"文件夹下
-	—— 2.2 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音
+	—— 2.2 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
 	    ++++ 如：2014-04-18-如何撰写普通文档.Rmd
 		++++ 文件内参数为：layout: post title: "如何撰写普通文档" ...
-		++++ 修改文件名：2014-04-18-How to write common docs.Rmd
+		++++ 修改文件名：2014-04-18-How-to-write-common-docs.Rmd
 		++++ 文件内参数不变，依然中文title
 	—— 2.3 用Rstudio打开"data-scientist.github.com.Rproj"文件
 	—— 2.4 在R console下键入："dir()"，确保自己位于"data-scientist.github.com"根目录下

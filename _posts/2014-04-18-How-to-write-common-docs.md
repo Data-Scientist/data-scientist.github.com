@@ -37,7 +37,7 @@ You can also embed plots, for example:
 plot(cars)
 {% endhighlight %}
 
-![center](/figures/2014-04-18-How_to_write_common_docs/fig1.png) 
+![center](/figures/2014-04-18-How-to-write-common-docs/fig1.png) 
 
 ##### Figure 1: 汽车
 
@@ -160,7 +160,7 @@ par(mar = c(4, 4, 0.1, 0.1), omi = c(0, 0, 0, 0))
 plot(cars)
 {% endhighlight %}
 
-![center](/figures/2014-04-18-How_to_write_common_docs/fig2.png) 
+![center](/figures/2014-04-18-How-to-write-common-docs/fig2.png) 
 
 ##### Figure 2: Caption
 
@@ -170,7 +170,7 @@ par(mar = c(2.5, 2.5, 0.5, 0.1), omi = c(0, 0, 0, 0))
 filled.contour(volcano)
 {% endhighlight %}
 
-![center](/figures/2014-04-18-How_to_write_common_docs/fig3.png) 
+![center](/figures/2014-04-18-How-to-write-common-docs/fig3.png) 
 
 ##### Figure 3: Caption
 

@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://data-scientist.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://data-scientist.github.io" />
-<updated>2014-04-24T09:26:50+00:00</updated>
+<updated>2014-04-25T13:32:12+00:00</updated>
 <id>http://data-scientist.github.io/</id>
 <author>
   <name>Lords</name>
@@ -182,41 +182,6 @@
 
 
 <entry>
-  <title type="html"><![CDATA[如何撰写普通文档]]></title>
-  <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/" />
-  <id>http://data-scientist.github.io/help/如何撰写普通文档</id>
-  <published>2014-04-18T00:00:00+00:00</published>
-  <updated>2014-04-18T00:00:00+00:00</updated>
-  <author>
-    <name>Lords</name>
-    <uri>http://data-scientist.github.io</uri>
-    <email>kitaev@126.com</email>
-  </author>
-  <content type="html">
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the &lt;strong&gt;Help&lt;/strong&gt; toolbar button for more details on using R Markdown).&lt;/p&gt;
-
-&lt;p&gt;When you click the &lt;strong&gt;Knit HTML&lt;/strong&gt; button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;summary&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;##      speed           dist    
-##  Min.   : 4.0   Min.   :  2  
-##  1st Qu.:12.0   1st Qu.: 26  
-##  Median :15.0   Median : 36  
-##  Mean   :15.4   Mean   : 43  
-##  3rd Qu.:19.0   3rd Qu.: 56  
-##  Max.   :25.0   Max.   :120
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E6%99%AE%E9%80%9A%E6%96%87%E6%A1%A3/&quot;&gt;如何撰写普通文档&lt;/a&gt; was originally published by Lords at &lt;a href=&quot;http://data-scientist.github.io&quot;&gt;Library of Data Scientist&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[如何撰写图片文档]]></title>
   <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/%E5%A6%82%E4%BD%95%E6%92%B0%E5%86%99%E5%9B%BE%E7%89%87%E6%96%87%E6%A1%A3/" />
   <id>http://data-scientist.github.io/help/如何撰写图片文档</id>
@@ -284,8 +249,8 @@
 
 <entry>
   <title type="html"><![CDATA[如何撰写普通文档]]></title>
-  <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/How+to+write+common+docs/" />
-  <id>http://data-scientist.github.io/help/How to write common docs</id>
+  <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/How-to-write-common-docs/" />
+  <id>http://data-scientist.github.io/help/How-to-write-common-docs</id>
   <published>2014-04-18T00:00:00+00:00</published>
   <updated>2014-04-18T00:00:00+00:00</updated>
   <author>
@@ -315,7 +280,7 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;r&quot;&gt;plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How_to_write_common_docs/fig1.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How-to-write-common-docs/fig1.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
 
 &lt;h5 id=&quot;figure-1-&quot;&gt;Figure 1: 汽车&lt;/h5&gt;
 
@@ -419,7 +384,7 @@ folder located at the root of the repository.&lt;/p&gt;
 plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How_to_write_common_docs/fig2.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How-to-write-common-docs/fig2.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
 
 &lt;h5 id=&quot;figure-2-caption&quot;&gt;Figure 2: Caption&lt;/h5&gt;
 
@@ -427,7 +392,7 @@ plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quo
 filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How_to_write_common_docs/fig3.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/figures/2014-04-18-How-to-write-common-docs/fig3.png&quot; alt=&quot;center&quot; /&gt; &lt;/p&gt;
 
 &lt;h5 id=&quot;figure-3-caption&quot;&gt;Figure 3: Caption&lt;/h5&gt;
 
@@ -457,14 +422,14 @@ filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span clas
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://data-scientist.github.io/help/How+to+write+common+docs/&quot;&gt;如何撰写普通文档&lt;/a&gt; was originally published by Lords at &lt;a href=&quot;http://data-scientist.github.io&quot;&gt;Library of Data Scientist&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://data-scientist.github.io/help/How-to-write-common-docs/&quot;&gt;如何撰写普通文档&lt;/a&gt; was originally published by Lords at &lt;a href=&quot;http://data-scientist.github.io&quot;&gt;Library of Data Scientist&lt;/a&gt; on April 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Post 模板]]></title>
-  <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/Post+%E6%A8%A1%E6%9D%BF/" />
-  <id>http://data-scientist.github.io/help/Post 模板</id>
+  <link rel="alternate" type="text/html" href="http://data-scientist.github.io/help/Post-%E6%A8%A1%E6%9D%BF/" />
+  <id>http://data-scientist.github.io/help/Post-模板</id>
   <updated>2013-05-31T00:00:00-00:00</updated>
   <published>2011-03-10T00:00:00+00:00</published>
   
@@ -625,7 +590,7 @@ filled.contour&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;volcano&lt;span clas
 
 &lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;This is a button&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://data-scientist.github.io/help/Post+%E6%A8%A1%E6%9D%BF/&quot;&gt;Post 模板&lt;/a&gt; was originally published by Lords at &lt;a href=&quot;http://data-scientist.github.io&quot;&gt;Library of Data Scientist&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://data-scientist.github.io/help/Post-%E6%A8%A1%E6%9D%BF/&quot;&gt;Post 模板&lt;/a&gt; was originally published by Lords at &lt;a href=&quot;http://data-scientist.github.io&quot;&gt;Library of Data Scientist&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
 </entry>
 
 </feed>
