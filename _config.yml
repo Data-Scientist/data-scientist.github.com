@@ -1,11 +1,9 @@
 # encoding: utf-8
-
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-# permalink: /:categories/:year/:month/:day/:title
-
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [.rvmrc, .rbenv-version, README.md, Rakefile, changelog.md, .gitignore, History.markdown]
 pygments: true
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -161,24 +159,12 @@ links:
 #    url: http://mademistakes.com
 #    external: true
 
-  # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    China/Shang_hai
 future:      true
-# pygments:    true
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
-
 markdown: kramdown
-
-#markdown: redcarpet
-#markdown: maruku
-#markdown:  rdiscount
-#pandoc:  true
-
 #markdown: pandoc
 #pandoc:
 #  extensions:
@@ -188,4 +174,3 @@ markdown: kramdown
 #    - template: 'assets/datauri_template.html'   # Use with 'self-contained' to avoid header text in body
 #    - self-contained                             # Archive images in posts as URIs.  Very slow, for archiving only.
 #    - mathml                                     # Use mathml for equations (Archival, HTML5/XML valid syntax)
-
