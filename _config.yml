@@ -9,7 +9,7 @@ permalink:   /:categories/:title/
 # so be sure to set them if your theme uses them.
 #
 title : Library of Data Scientist
-description:      Describe your website.
+description: Describe your website.
 tagline: Site Tagline Describe your website
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 #url:              http://localhost:4000
@@ -23,7 +23,7 @@ owner:
   stackoverflow:
   linkedin:
   github : data-scientist
-  twitter : N/A
+  twitter :
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed

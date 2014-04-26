@@ -7,14 +7,22 @@
 <!-- Highlight code -->
 <link rel="stylesheet" href="/pygments.css">
 
-{% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ BASE_PATH }}/images/{{ page.image.feature }}">
-{% else %}<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{% if page.image.thumb %}{{ BASE_PATH }}/images/{{ page.image.thumb }}{% else %}{{ BASE_PATH }}/images/{{ site.logo }}{% endif %}">{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+{% if site.owner.twitter %}
+  {% if page.image.feature %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ BASE_PATH }}/images/{{ page.image.feature }}">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+    {% if page.image.thumb %}
+      <meta name="twitter:image" content="{{ BASE_PATH }}/images/{{ page.image.thumb }}">
+    {% else %}
+      <meta name="twitter:image" content="{{ BASE_PATH }}/images/{{ site.logo }}">
+    {% endif %}
+  {% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+{% endif %}
 
 <!-- Enable responsive viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +36,8 @@
 <meta property="og:url" content="{{ BASE_PATH }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
-{% if site.google_verify %}<!-- Webmaster Tools verfication -->
-<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+<!-- Webmaster Tools verfication -->
+{% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
 {% capture canonical %}{{ BASE_PATH }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
@@ -44,9 +52,8 @@
 
 
 <!-- Google Webfonts -->
-<!--
+
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
--->
 	<!-- For all browsers, rich but ugly-->
 <link rel="stylesheet" href="{{ BASE_PATH }}/assets/themes/minimal-mistakes/css/main.min.css">
 
