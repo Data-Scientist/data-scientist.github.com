@@ -6,15 +6,16 @@ inc:
   logo:         logo.png
 
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   https://sendtoinc.com/about/
+  company:      "Data Scientist"
+  url:          http://data-scientist.github.io/
+  facebook:     false
+  twitter:      false
+  github:       "Data-Scientist"
+  gplus:        false
+  about_link:   http://data-scientist.github.io/about/
 
   # Product Information
-  product_link: http://incorporated.sendtoinc.com/
+  product_link: http://data-scientist.github.io/
   tagline:      "Get a modern blog for your company"
 
   # Comments
@@ -41,7 +42,7 @@ inc:
 
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://incorporated.sendtoinc.com
+url:         http://data-scientist.github.io/
 source:      .
 destination: ./_site
 plugins:     ./_plugins
