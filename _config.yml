@@ -15,8 +15,8 @@ inc:
   about_link:   http://data-scientist.github.io/about/
 
   # Product Information
-  product_link: http://data-scientist.github.io/
-  tagline:      "Get a modern blog for your company"
+  product_link: http://github.com/data-scientist/
+  tagline:      "Become a Data Scientist"
 
   # Comments
   disqus:
