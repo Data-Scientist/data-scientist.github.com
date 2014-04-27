@@ -45,7 +45,7 @@ plot(cars)
 
 混编Latex：
 
-先给出一个行内Latex公式到例子，$ChooseMove：B \to M$，然后看一个段间到例子：
+先给出一个行内Latex公式到例子，$$ ChooseMove：B \to M $$，然后看一个段间到例子：
 
 
 {% highlight r %}
