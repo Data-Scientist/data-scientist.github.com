@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+
 {% if page.cover_image %}
 <div class="article-cover">
     <div>
@@ -8,6 +9,7 @@ layout: base
     </div>
 </div>
 {% endif %}
+
 <article>
     <div class="container">
         <header>
@@ -27,13 +29,14 @@ layout: base
         </section>
 
         <footer>
+          {% if page.author %}
             <address>
                {% if page.author.image %}<img src="/images/{{ page.author.image }}">{% endif %}
                 <p>Written by <strong><a rel="author" href="https://twitter.com/{{ page.author.twitter }}" title="{{ page.author_name }}" target="_blank">{{ page.author.name }}</a></strong><br>
                 <span class="muted">{{ page.author.bio }}</span>
                 </p>
             </address>
-
+          {% endif %}
         </footer>
 
         {% if site.inc.disqus.shortname %}
