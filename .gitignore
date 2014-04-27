@@ -30,3 +30,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Created by http://www.gitignore.io
+
+### Sass ###
+.sass-cache
+
