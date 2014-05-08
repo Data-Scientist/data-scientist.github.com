@@ -58,7 +58,7 @@ Data-Scientist is released under the [MIT License](http://www.opensource.org/lic
 
 ###2.2 开发工具
 - [R](http://www.r-project.org/)
-- [Ruby](https://www.ruby-lang.org/zh_cn/)    [推荐使用rbenv管理Ruby版本](https://github.com/sstephenson/rbenv)
+- [Ruby](https://www.ruby-lang.org/zh_cn/) - [推荐使用rbenv管理Ruby版本](https://github.com/sstephenson/rbenv)
 - [Rstudio](https://www.rstudio.com/)
 - [Git](http://git-scm.com/docs)
 - [Latex](http://www.latex-project.org/)
