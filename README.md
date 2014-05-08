@@ -24,10 +24,10 @@ Data-Scientist以实际项目(广义，等价于Repo.)为核心，同时围绕�
 ##二、使用指南
 // 关于新手如何使用
 // git使用规范，这里引用，具体放附录
-    —— 2.1 将最新的Rmd源文件放在"_draft/src"文件夹下
-	—— 2.2 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
-	    ++++ 如：2014-04-18-如何撰写普通文档.Rmd
-		++++ 文件内参数为：layout: post title: "如何撰写普通文档" ...
+    1 将最新的Rmd源文件放在"_draft/src"文件夹下
+	2 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
+	- 如：2014-04-18-如何撰写普通文档.Rmd
+		- 文件内参数为：layout: post title: "如何撰写普通文档" ...
 		++++ 修改文件名：2014-04-18-How-to-write-common-docs.Rmd
 		++++ 文件内参数不变，依然中文title
 	—— 2.3 用Rstudio打开"data-scientist.github.com.Rproj"文件
@@ -67,9 +67,9 @@ Data-Scientist is released under the [MIT License](http://www.opensource.org/lic
 - [Jekyll](http://jekyllrb.com/) [安装指南](http://jekyllrb.com/docs/installation/)
 
 ###A1.3 典型的开发环境构建
-RStudio + Knitr ===> 方便Rcode, Rmd, md trans
-Eclipse + Egit ===> 方便Github操作，Java, Scala
-VMware + CentOS/DS Toolbox + Hadoop/Spark + Window7（Memory>=8G） + VMShareFolder/SSH Secure Shell File Trans Window
+- RStudio + Knitr ===> 方便Rcode, Rmd, md trans
+- Eclipse + Egit ===> 方便Github操作，Java, Scala
+- VMware + CentOS/DS Toolbox + Hadoop/Spark + Window7（Memory>=8G） + VMShareFolder/SSH Secure Shell File Trans Window
 
 
 ##附录二、Git使用规范
