@@ -53,10 +53,10 @@ Data-Scientist is released under the [MIT License](http://www.opensource.org/lic
 
 ##附录一、项目环境配置
 
-###2.1 系统
+###A1.1 系统
 推荐使用Linux 或者 Mac OS X，如果是虚拟机环境，建议使用CentOS6.4，方便与以后的大数据环境对接。
 
-###2.2 开发工具
+###A1.2 开发工具
 - [R](http://www.r-project.org/)
 - [Ruby](https://www.ruby-lang.org/zh_cn/) - [推荐使用rbenv管理Ruby版本](https://github.com/sstephenson/rbenv)
 - [Rstudio](https://www.rstudio.com/)
@@ -66,7 +66,7 @@ Data-Scientist is released under the [MIT License](http://www.opensource.org/lic
 - [Bundler](http://bundler.io/)
 - [Jekyll](http://jekyllrb.com/) [安装指南](http://jekyllrb.com/docs/installation/)
 
-###2.3 典型的开发环境构建
+###A1.3 典型的开发环境构建
 RStudio + Knitr ===> 方便Rcode, Rmd, md trans
 Eclipse + Egit ===> 方便Github操作，Java, Scala
 VMware + CentOS/DS Toolbox + Hadoop/Spark + Window7（Memory>=8G） + VMShareFolder/SSH Secure Shell File Trans Window
@@ -74,8 +74,8 @@ VMware + CentOS/DS Toolbox + Hadoop/Spark + Window7（Memory>=8G） + VMShareFol
 
 ##附录二、Git使用规范
 
-###A.1 Git常用方法
+###A2.1 Git常用方法
 参见[Git简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)或者[Github Help](https://help.github.com/)
 
-###A.2 工作流
+###A2.2 工作流
 
