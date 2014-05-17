@@ -1,5 +1,6 @@
 #Data-Scientist Introduction#
 
+
 ##一、关于我们
 ###1.1、Data-Scientist介绍
 Data-Scientist是Lords组织在GitHub上的知识管理中心，也是践行MOSS(Massive Online Synergistic Study)理念
@@ -15,17 +16,21 @@ Lords(Library of Data Scientist)是一个组织，同时也是一个平台。Lor
 无论将来如何风云变幻，勿忘初心。
 
 ###1.3、Data-Scientist框架组成
-Data-Scientist以实际项目(广义，等价于Repo.)为核心，同时围绕项目展开文档，并不断协作优化文档，完成实践积累、知识沉淀、文档输出整个过程。
+Data-Scientist以实际项目(广义，等价于Repo.)为核心，同时围绕项目展开文档，并不断协作优化文档，完成实践积累、知识沉淀、文档输出整个过程，并最终展示在DS主页内。
 主要包涵以下几类项目：
-- Project：实际数据分析/挖掘项目。归为 xxx 对应于页面子频道xxx
-//待完成
+- Project：实际数据分析/挖掘项目。包括初期demo/mock项目，中后期孵化项目等（编号规则：LP01-项目缩写-mmdd，01指2014年。项目介绍及分析报告同步显示在DS主页对应Projects分支下）
+- Courses：MOOC课程笔记心得及扩充（编号规则：LC01-课程缩写-mmdd。同步显示在DS主页对应Courses分支下）
+- Books：读书笔记心得及扩充（编号规则：LB01-书籍缩写-mmdd。同步显示在DS主页对应Books分支下）
+- Papers：论文精读（编号规则：LT01-系列论文分类缩写-mmdd。同步显示在DS主页对应Papers分支下）
+- SourceCodes：源代码精读（编号规则：LS01-代码库缩写-mmdd。同步显示在DS主页对应SourceCodes分支下）
+- Algorithms：算法库，Project/Course/Book...等遇到算法时，简单论述所涉关键算法及思想，具体展开则交叉引用参考算法库(编号规则：LA01-算法缩写-mmdd。同步显示在DS主页对应Algorithms分支下)
 
 
 ##二、使用指南
 // 关于新手如何使用
 // git使用规范，这里引用，具体放附录
-    1 将最新的Rmd源文件放在"_draft/src"文件夹下
-	2 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
+    1. 将最新的Rmd源文件放在"_draft/src"文件夹下
+	2. 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
 	- 如：2014-04-18-如何撰写普通文档.Rmd
 		- 文件内参数为：layout: post title: "如何撰写普通文档" ...
 		++++ 修改文件名：2014-04-18-How-to-write-common-docs.Rmd
