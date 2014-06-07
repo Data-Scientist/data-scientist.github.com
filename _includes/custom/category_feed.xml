@@ -1,27 +1,25 @@
 ---
-layout: nil
+layout: rss-feed
 ---
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
-  <title><![CDATA[{% if site.titlecase %}{{ page.title | titlecase | cdata_escape }}{% else %}{{ page.title | cdata_escape }}{% endif %} | {{ site.title | cdata_escape }}]]></title>
-  <link href="{{ site.url }}/{{ page.feed_url }}" rel="self"/>
-  <link href="{{ site.url }}/"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}/</id>
-  <author>
-    <name><![CDATA[{{ site.author | strip_html }}]]></name>
-    {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
-
-  {% for post in site.categories[page.category] limit: 5 %}
-  <entry>
-    <title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-    <link href="{{ site.url }}{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}{{ post.id }}</id>
-    <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | markdownify | cdata_escape }}]]></content>
-  </entry>
-  {% endfor %}
+  <channel>
+    <title>{{ site.blog_title }}</title>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}{{ page.feed_url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    {% for post in site.categories[page.category] %}
+    {% unless post.draft %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>{{ post.author_name }}</author>
+      <guid>{{ site.url }}{{ post.id }}</guid>
+      <description><![CDATA[{{ post.content | expand_urls: site.url | markdownify | xml_escape |cdata_escape }}]]></description>
+    </item>
+    {% endunless %}
+    {% endfor %}
+  </channel>
 </feed>
