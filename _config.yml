@@ -3,6 +3,7 @@ inc:
   title:        "Library of Data Scientist"
   subtitle:     "A Library of Data Scientist"
   cover_image:  blog-cover.jpg
+  category_cover_image: category-cover.jpg
   logo:         logo.png
 
   # Company information
