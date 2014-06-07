@@ -2,7 +2,7 @@
 layout: post
 title: "如何撰写普通文档"
 description: "如何在文档中内嵌R、Python等语言实现文学编程以及如何在文档内撰写数学公式和实现语法高亮"
-category: HELP
+category: "help"
 tags: [help, jekyll, writing]
 
 ---
