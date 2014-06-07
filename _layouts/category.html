@@ -24,7 +24,6 @@ layout: base
     {% for post in site.categories[page.category] %}
     <div>{{ post.date | date_to_html_string }}</div>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p> {{ post.categories }} </p>
     <div class="categories">Categories: {{ post.categories | category_links }}</div>
     {% endfor %}
   </ul>

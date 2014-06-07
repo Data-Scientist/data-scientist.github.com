@@ -13,10 +13,8 @@ inc:
   twitter:      false
   github:       "Data-Scientist"
   gplus:        false
-  about_link:   http://data-scientist.github.io/about/
 
-  # Product Information
-  product_link: http://github.com/data-scientist/
+  # Category information
   tagline:      "Become a Data Scientist"
 
   # Comments
