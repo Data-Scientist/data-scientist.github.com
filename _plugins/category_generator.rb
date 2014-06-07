@@ -172,7 +172,7 @@ ERR
     # Returns string
     #
     def category_link(category)
-      dir = @context.registers[:site].config['category_dir']
+      dir = @context.registers[:site].config['category_dir'] || "categories"
       "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
     end
 
