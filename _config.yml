@@ -49,7 +49,7 @@ plugins:     ./_plugins
 layouts:     ./_layouts
 include:     ['.htaccess']
 exclude:     [.rvmrc, .rbenv-version, README.md, Rakefile, .gitignore, Gemfile, Gemfile.lock]
-timezone:    nilChina/Shang_hai
+timezone:    China/Shang_hai
 
 # Show future posts
 future:      true

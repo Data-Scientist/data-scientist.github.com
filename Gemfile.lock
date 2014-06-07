@@ -111,6 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  execjs
   github-pages
   jekyll
   jekyll-assets
