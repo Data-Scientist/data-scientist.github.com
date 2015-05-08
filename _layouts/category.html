@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<div class="blog-cover" style="background-image:url(/images/{{ site.inc.category_cover_image }});">
+  <section>
+    <div class="container">
+      <h1> {{ page.title }} </h1>
+      {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
+
+      {% if false %}
+      <a href="atom.xml" title="RSS Feed">
+        <i class="icon icon-rss"></i>
+      </a>
+      {% endif %}
+    </div>
+  </section>
+</div>
+
+
+<article class="container">
+  <h1 class="category">{{ page.title }}</h1>
+  <ul class="posts">
+    {% for post in site.categories[page.category] %}
+    <div>{{ post.date | date_to_html_string }}</div>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="categories">Categories: {{ post.categories | category_links }}</div>
+    {% endfor %}
+  </ul>
+</article>

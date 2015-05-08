@@ -1,1 +1,0 @@
-$ rake theme:switch name="minimal-mistakes"

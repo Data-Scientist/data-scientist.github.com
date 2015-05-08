@@ -1,100 +1,86 @@
-#Data-Scientist 项目引导#
+#Data-Scientist Introduction#
 
-##一、项目介绍##
-###1.1、项目背景
-###1.2、项目意义
-###1.3、项目工作流程
-###1.4、项目开发方式
-###1.5、项目精神
-###1.6、项目方法论
-###1.7、项目涉及专业
-##二、项目环境配置##
-###2.1、开发工具介绍###
-- [R](http://www.r-project.org/ "R")
-- [Rstudio](https://www.rstudio.com/ "rstudio")
-- [Git](http://git-scm.com/docs "Git")
-- [jekyll](http://jekyllrb.com/ "jekyll")
-- [latex](http://www.latex-project.org/ "latex")
-- [Ruby](https://www.ruby-lang.org/zh_cn/ "Ruby")
-- [rubygems](http://rubygems.org/ "rubygems")  
 
-###2.2、安装Linux操作系统###
-     CentOS6.5_64bit  
-###2.3、安装Ruby环境###
-     1、安装系统相关依赖包  
-     yum install gcc-c++ patch readline readline-devel zlib zlib-devel 
-     yum install libyaml-devel libffi-devel openssl-devel make 
-     yum install bzip2 autoconf automake libtool bison iconv-devel
-     2、安装RVM(Ruby版本管理器-Ruby Version Manager)
-     curl -L get.rvm.io | bash -s stable
-     3、设置RVM环境
-     source /etc/profile.d/rvm.sh
-     4、安装1.9.3版本Ruby
-     rvm install 1.9.3
-     5、查看Ruby版本
-     ruby --version
-     6、安装Ruby Gems
-     yum install rubygems
-     7、安装Ruby bundler
-     gem install bundler
-     8、安装jekyll
-     gem install jekyll
-     9、安装git
-     yum install git
-     10、下载项目
-     git clone https://github.com/Data-Scientist/data-scientist.github.com.git
-     11、运行项目
-     jekyll serve
-     12、本地访问项目
-     http://youIp:4000(访问前最好关闭防火墙)    
-     
-###2.4、Git常用方法###
+##一、关于我们
+###1.1、Data-Scientist介绍
+Data-Scientist是Lords组织在GitHub上的知识管理中心，也是践行MOSS(Massive Online Synergistic Study)理念
+的实体化产物——通过集体智慧来加速知识凝聚积累，从而达到协同优化的目的。MOSS因应MOOC(Massive Online Open Course)
+运动的感召，并承袭Open Source, Open API, Open Data, Open Science... 的精神，必将彰显时代新风，携弄潮儿奔流向前。
+这，就是我们所愿意看到的未来，也是我们所愿意贡献点滴的现在。
 
-####git删除文件
-	git rm "文件名"
-	git commit -m "删除文件"
-	git push origin master
-####git创建分支
-	git branche gh-pages
-####git切换分支
-	git checkout gh-pages
-####git push 403错误解决
-	[root@cloud .git]# git push origin master
-	Xlib:  extension "RANDR" missing on display "localhost:11.0".
-	error: The requested URL returned error: 403 while accessing               https://Data-Scientist@github.com/Data-Scientist/data-scientist.github.com.git/info/refs
-	
-	[root@cloud .git]# git remote set-url origin ssh://git@github.com/Data-Scientist/data-scientist.github.com.git
-	[root@cloud .git]# git push origin master
-	To ssh://git@github.com/Data-Scientist/data-scientist.github.com.git
-	 ! [rejected]        master -> master (non-fast-forward)
-	error: failed to push some refs to 'ssh://git@github.com/Data-Scientist/data-scientist.github.com.git'
-	To prevent you from losing history, non-fast-forward updates were rejected
-	Merge the remote changes before pushing again.  See the 'Note about
-	fast-forwards' section of 'git push --help' for details.
-	[root@cloud .git]# git push -f origin master
-	Counting objects: 45, done.
-	Compressing objects: 100% (20/20), done.
-	Writing objects: 100% (42/42), 5.11 KiB, done.
-	Total 42 (delta 24), reused 38 (delta 22)
-	To ssh://git@github.com/Data-Scientist/data-scientist.github.com.git
-	 + ceeb989...a5674e0 master -> master (forced update)
-	[root@cloud .git]# cd ..
+###1.2、Lords介绍
+Lords(Library of Data Scientist)是一个组织，同时也是一个平台。Lords旨在汇聚任何对数据科学有兴趣，或致力于
+成为卓越数据科学家的人才，并为其提供理论学习、经验交流乃至项目实践、孵化的环境。Lords因Coursera而起，因R而成型，
+但并不限于此。正如分析工具从R、SAS、Python到Hadoop、Spark，处理能力逐层递进；我们涵盖的领域也从数据分析、数据挖掘、
+传统机器学习到深度学习、大数据分析，不一而足；我们更希望成员的关系亦师亦友，或团队共事，或同创伟业。但有一点，
+无论将来如何风云变幻，勿忘初心。
 
-####git为项目添加远程仓库分支
-	例子1：git remote add apacheCloudStack https://github.com/apache/cloudstack.git
-	例子2：git remote add upstream https://github.com/apache/cloudstack.git
-####git将远程分支同步到本地库
-	例子1：git remote -v  本地仓库的远程分支情况
-	例子2：git fetch apacheCloudStack  //后面的名字是远程分支的别名
-####git合并fetch下来的分支代码
-	例子1: git merge apacheCloudStack/master
-####git将合并的后的代码推送到远程仓库
-	例子1: git push origin master
-###2.5 Knitr 安装
-	1、打开Rstudio
-	2、在console中输入install.packages("knitr");
-	3、运行KnitPost.R脚本
-	4、KnitPost("_drafts/heidsoft_testRmd.Rmd") 执行后在项目的根目录下生成heidsoft_testRmd.md文件
-	5、rake post title="heidsoft_testRmd"
-	6、cp heidsoft_testRmd.md ./_posts/xxxxxx_heidsoft_testRmd.md
+###1.3、Data-Scientist框架组成
+Data-Scientist以实际项目(广义，等价于Repo.)为核心，同时围绕项目展开文档，并不断协作优化文档，完成实践积累、知识沉淀、文档输出整个过程，并最终展示在DS主页内。
+主要包涵以下几类项目：
+- Project：实际数据分析/挖掘项目。包括初期demo/mock项目，中后期孵化项目等（编号规则：LP01-项目缩写-mmdd，01指2014年。项目介绍及分析报告同步显示在DS主页对应Projects分支下）
+- Courses：MOOC课程笔记心得及扩充（编号规则：LC01-课程缩写-mmdd。同步显示在DS主页对应Courses分支下）
+- Books：读书笔记心得及扩充（编号规则：LB01-书籍缩写-mmdd。同步显示在DS主页对应Books分支下）
+- Papers：论文精读（编号规则：LT01-系列论文分类缩写-mmdd。同步显示在DS主页对应Papers分支下）
+- SourceCodes：源代码精读（编号规则：LS01-代码库缩写-mmdd。同步显示在DS主页对应SourceCodes分支下）
+- Algorithms：算法库，Project/Course/Book...等遇到算法时，简单论述所涉关键算法及思想，具体展开则交叉引用参考算法库(编号规则：LA01-算法缩写-mmdd。同步显示在DS主页对应Algorithms分支下)
+
+
+##二、使用指南
+// 关于新手如何使用
+// git使用规范，这里引用，具体放附录
+    1. 将最新的Rmd源文件放在"_draft/src"文件夹下
+	2. 大部分情况是中文文档，由于knitr不支持中文文件名的解析，可以在保留文件内title参数为中文的情况下，修改Rmd文件名为英文/拼音(文件名中间不能有空格)
+	- 如：2014-04-18-如何撰写普通文档.Rmd
+		- 文件内参数为：layout: post title: "如何撰写普通文档" ...
+		++++ 修改文件名：2014-04-18-How-to-write-common-docs.Rmd
+		++++ 文件内参数不变，依然中文title
+	—— 2.3 用Rstudio打开"data-scientist.github.com.Rproj"文件
+	—— 2.4 在R console下键入："dir()"，确保自己位于"data-scientist.github.com"根目录下
+	—— 2.5 载入KnitPost脚本：source("_drafts/KnitPost.R")
+	—— 2.6 使用KnitPost脚本生成相应的图片和md文件：KnitPost("_drafts/20xx-xx-xx-yourfile.Rmd")
+	—— 2.7 检查根目录下"figures"文件夹是否生成"20xx-xx-xx-yourfile"文件夹，以及文件夹内是否有png图片
+	—— 2.8 检查根目录下"_posts"文件夹内是否生成相应的"20xx-xx-xx-yourfile.md"文件
+	—— 2.9 终端下(CMD or Bash)，进入"data-scientist.github.com"根目录，键入："jekyll serve"，启动Jekyll无误
+	—— 2.10 打开浏览器，键入："localhost:4000"，页面显示无误
+	—— 2.11 git push (-u origin master)
+	—— 2.12 几分钟到十几分钟之后，检查"data-scientist.github.com"页面是否正常显示并更新
+
+
+
+##三、贡献代码
+我们非常欢迎您给Data-Scientist贡献代码, 但在贡献之前，请阅读[CONTRIBUTING](CONTRIBUTING.md)
+//补充：如何联系？如何加入
+
+##四、许可(License)
+Data-Scientist is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+
+##附录一、项目环境配置
+
+###A1.1 系统
+推荐使用Linux 或者 Mac OS X，如果是虚拟机环境，建议使用CentOS6.4，方便与以后的大数据环境对接。
+
+###A1.2 开发工具
+- [R](http://www.r-project.org/)
+- [Ruby](https://www.ruby-lang.org/zh_cn/) - [推荐使用rbenv管理Ruby版本](https://github.com/sstephenson/rbenv)
+- [Rstudio](https://www.rstudio.com/)
+- [Git](http://git-scm.com/docs)
+- [Latex](http://www.latex-project.org/)
+- [Rubygems](http://rubygems.org/)
+- [Bundler](http://bundler.io/)
+- [Jekyll](http://jekyllrb.com/) [安装指南](http://jekyllrb.com/docs/installation/)
+
+###A1.3 典型的开发环境构建
+- RStudio + Knitr ===> 方便Rcode, Rmd, md trans
+- Eclipse + Egit ===> 方便Github操作，Java, Scala
+- VMware + CentOS/DS Toolbox + Hadoop/Spark + Window7（Memory>=8G） + VMShareFolder/SSH Secure Shell File Trans Window
+
+
+##附录二、Git使用规范
+
+###A2.1 Git常用方法
+参见[Git简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)或者[Github Help](https://help.github.com/)
+
+###A2.2 工作流
 
