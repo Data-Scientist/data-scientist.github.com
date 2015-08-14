@@ -1,0 +1,16 @@
+{
+    "contents" : "---\nlayout: post\ntitle: \"Blog with Knitr and Jekyll\"\ndescription: \"\"\ncategory: r\ntags: [knitr, jekyll, tutorial]\n---\n{% include JB/setup %}\n\nThe [knitr](http://yihui.name/knitr/) package provides an easy way to embed \n[R](http://www.r-project.org/) code in a [Jekyll-Bootstrap](http://jekyllbootstrap.com/) \nblog post. The only required input is an **R Markdown** source file. \nThe name of the source file used to generate this post is *2012-07-03-knitr-jekyll.Rmd*, available\n[here](https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/Rmd/2012-07-03-knitr-jekyll.Rmd).\nSteps taken to build this post are as follows:\n\n### Step 1\n\nCreate a Jekyll-Boostrap blog if you don't already have one. \nA brief tutorial on building this blog is available \n[here](/lessons/2012/05/30/jekyll-build-on-windows/).\n\n### Step 2\n\nOpen the R Console and process the source file:\n```{r eval=FALSE}\nKnitPost <- function(input, base.url = \"/\") {\n  require(knitr)\n  opts_knit$set(base.url = base.url)\n  fig.path <- paste0(\"figs/\", sub(\".Rmd$\", \"\", basename(input)), \"/\")\n  opts_chunk$set(fig.path = fig.path)\n  opts_chunk$set(fig.cap = \"center\")\n  render_jekyll()\n  knit(input, envir = parent.frame())\n}\nKnitPost(\"2012-07-03-knitr-jekyll.Rmd\")\n```\n\n### Step 3\n\nMove the resulting image folder *2012-07-03-knitr-jekyll* and **Markdown** file \n*2012-07-03-knitr-jekyll.md* to the local \n*jfisher-usgs.github.com* [git](http://git-scm.com/) repository.\nThe KnitPost function assumes that the image folder will be placed in a \n[figs](https://github.com/jfisher-usgs/jfisher-usgs.github.com/tree/master/figs) \nfolder located at the root of the repository.\n\n### Step 4\n\nAdd the following CSS code to the \n*/assets/themes/twitter-2.0/css/bootstrap.min.css* file to center images:\n\n    [alt=center] {\n      display: block;\n      margin: auto;\n    }\n\nThat's it.\n\n***\n\nHere are a few examples of embedding R code:\n```{r}\nsummary(cars)\n```\n\n```{r fig1, fig.width=6, fig.height=4, echo=TRUE}\npar(mar = c(4, 4, 0.1, 0.1), omi = c(0, 0, 0, 0))\nplot(cars)\n```\n##### Figure 1: Caption\n\n```{r fig2, fig.width=8, fig.height=7, echo=TRUE}\npar(mar = c(2.5, 2.5, 0.5, 0.1), omi = c(0, 0, 0, 0))\nfilled.contour(volcano)\n```\n##### Figure 2: Caption\n\nAnd don't forget your session information for proper reproducible research.\n```{r}\nsessionInfo()\n```",
+    "created" : 1394100978178.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2542775460",
+    "id" : "106EB93D",
+    "lastKnownWriteTime" : 1394044478,
+    "path" : "/home/chj/repo/data-scientist.github.com/_drafts/2012-07-03-knitr-jekyll.Rmd",
+    "project_path" : "_drafts/2012-07-03-knitr-jekyll.Rmd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
